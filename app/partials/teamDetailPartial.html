@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h3>Csapat reszletek</h3>
+</div>
+<div class="modal-body">
+    <div role="form">
+        <div class="form-group">
+            <label class="row">Csapat név: <input type="text" class="form-control" ng-model="team.name">
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="row">Pont: <input type="number" class="form-control" ng-model="team.point">
+            </label>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

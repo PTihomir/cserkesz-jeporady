@@ -1,0 +1,5 @@
+@charset 'UTF-8';
+/* jquery.reject style fix */
+#jr_inner .jr_icon {
+  height: 94px;
+}

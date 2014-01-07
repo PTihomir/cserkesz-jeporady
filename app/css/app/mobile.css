@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+body > div {
+  height: 100%;
+}
+.content {
+  top: 40%;
+  position: relative;
+}
+.team-point {
+  margin-top: 20px;
+}

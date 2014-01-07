@@ -1,0 +1,25 @@
+{
+	"categoryname": {
+		"displayName": "Category",
+		"tags": "zene, film",
+		"questions": [
+			{
+				"id": 10001,
+				"question": "What is what?",
+				"answer": "",
+				"comment": "",
+				"sound": "url",
+				"image": "url"
+			},{
+				"id": 10002,
+				"question": "What is what?",
+				"answer": "",
+				"comment": "",
+				"sound": "url",
+				"image": "url"
+			}
+
+		]
+	}
+	
+}

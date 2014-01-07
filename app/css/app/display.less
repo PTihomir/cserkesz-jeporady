@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'Henny Penny';
+  src: url('fonts/HennyPenny-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Peralta';
+  src: url('fonts/Peralta-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #B0DAEA;
+}
+.main-title {
+    font-family: 'Henny Penny', cursive;
+    text-shadow: 0 0 3px black;
+}
+
+.team-container {
+
+    background-color: white;
+
+    & > div {
+        border-radius: 3px;
+        color: black;
+        display: inline-block;
+        padding: 10px 0;
+
+        .team-name {
+            font-family: 'Henny Penny', cursive;
+            font-size: 2em;
+            font-style: italic;
+            font-weight: bold;
+            height: 3em
+        }
+
+        .point {
+            font-family: 'Peralta', cursive;
+            font-size: 4em;
+            display: block;
+            margin-top: -30px;
+        }
+
+        .point-label {
+            font-family: 'Peralta', cursive;
+            font-size: 1.5em;
+            margin-top: -15px;
+        }
+    }
+}
+
+.category {
+    li {
+        border: 1px solid;
+        list-style-type: none;
+        margin: 5px 0;
+    }
+
+    .question-title {
+        div {
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+    }
+    .question {
+        div {
+            height: 50px;
+            background-color: black;
+
+            span {
+                position: relative;
+                top: 30%;
+
+                &.answered {
+                    color: #333333;
+                }
+
+                &.not-answered {
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+.question-dialog {
+    li {
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    .team-name {
+        font-size: 1.4em;
+    }
+}
+
+.category {
+  padding: 0;
+}
+.category li {
+  list-style-type: none;
+  margin: 0;
+}
+.category .question {
+  border: 1px solid #0095D9;
+  overflow: hidden;
+}
+.category:first-child li:nth-child(1) div {
+  border-radius: 0 0 0 3px;
+}
+.category:last-child li:nth-child(1) div {
+  border-radius: 0 0 3px 0;
+}
+.category:first-child .question:nth-child(2) {
+  border-radius: 3px 0 0 0;
+}
+.category:first-child .question:last-child {
+  border-radius: 0 0 0 3px;
+}
+.category:last-child .question:nth-child(2) {
+  border-radius: 0 3px 0 0;
+}
+.category:last-child .question:last-child {
+  border-radius: 0 0 3px 0;
+}
+.category .question:nth-child(2) {
+  border-top-color: #02ADEA;
+}
+.category .question:last-child {
+  border-bottom-color: #02ADEA;
+}
+.category:first-child .question {
+  border-left-color: #02ADEA;
+}
+.category:last-child .question {
+  border-right-color: #02ADEA;
+}
+.category .question-title {
+  border-bottom: 2px solid #75CBEA;
+}
+.category .question-title div {
+  font-family: 'Peralta', cursive;
+  height: 30px;
+  line-height: 30px;
+  background-color: #0095D9;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 0 3px white;
+}
+.category .question div {
+  font-family: 'Henny Penny', cursive;
+  height: 50px;
+  background-color: #02adea;
+}
+.category .question div span {
+  position: relative;
+  top: 30%;
+}
+.category .question div span.answered {
+  color: #111111;
+}
+.category .question div span.not-answered {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: black;
+}
+.question-dialog li {
+  padding: 5px;
+  margin: 5px 0;
+}
+.question-dialog .team-name {
+  font-size: 1.4em;
+}

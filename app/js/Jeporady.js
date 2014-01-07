@@ -1,0 +1,1 @@
+var jeporadyModule = angular.module('jeporady', ['ui.bootstrap']);

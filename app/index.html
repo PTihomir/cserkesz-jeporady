@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cseroldal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+       <!--  <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+       <!-- <link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="css/cseroldal_main.css">
+      <!--  <script src="lib/jquery/modernizr-2.6.2.min.js"></script>-->
+    </head>
+    <body ng-app="game">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Cseroldal</a>
+                <ul class="nav">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Scout</a></li>
+                    <li><a href="#">Game</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="span7" ng-controller="GameTabsController">
+                    <ul class="nav nav-pills">
+                        <li ng-class="filterVisible"><a href="#" ng-click="activateFilter()">Filter</a></li>
+                        <li ng-class="gameDetailVisible"><a href="#" ng-click="activateGameDetail()">Game</a></li>
+                        <li><a href="#">New +</a></li>
+                    </ul>
+                    <div ng-show="filterVisible.active" ng-include="'partials/filter-game.html'"></div>
+
+                    <div ng-show="gameDetailVisible.active" ng-include="template"></div>
+                </div>
+                <div class="span4 offset1">
+                    <h3>Game list</h3>
+                    <ul class="game-list-cont unstyled" ng-controller="ListGameController">
+                        <li class="game-list-item" ng-repeat="game in gameService.games | gameFilter" ng-click="select(game)" ng->
+                            <h5>{{game.title}}</h5>
+                            <p ng-show="game.shortDescription">{{ game.shortDescription | limitTo:64 }}</p>
+                            <p ng-hide="game.shortDescription">{{ game.description | limitTo:64  }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Library files -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="lib/jquery/1.10.2/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- <script src='https://cdn.firebase.com/v0/firebase.js'></script> -->
+        <script src="lib/angular/1.2.0/angular.js"></script>
+        <!-- <script src="lib/firebase/angularfire.js"></script> -->
+
+
+        <script src="js/plugins.js"></script>
+        
+        <!-- Project files -->
+        <script src="js/GameModule.js"></script>
+        <script src="js/filters/GameFilter.js"></script>
+        <script src="js/controllers/GameTabsController.js"></script>
+        <script src="js/controllers/EditGameController.js"></script>
+        <script src="js/controllers/ViewGameController.js"></script>
+        <script src="js/controllers/ListGameController.js"></script>
+        <script src="js/controllers/FilterGameController.js"></script>
+    </body>
+</html>
