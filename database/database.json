@@ -250,4 +250,53 @@
         }
 
     ]
+},{
+    "id": "helyesiras",
+    "displayName": "Helytelen kakukktojás",
+    "questions": [
+        {
+            "id": 10001,
+            "question": "Vonat vagy autó",
+            "answer": "Vonat",
+            "comment": "",
+            "sound": null,
+            "image": null
+        },{
+            "id": 10002,
+            "question": "T-Rex vagy Steganosaurus",
+            "answer": "Steganosaurus",
+            "comment": "",
+            "sound": null,
+            "image": null
+        },{
+            "id": 10003,
+            "question": "Mátrix első része vagy Gyűrűk ura első része",
+            "answer": "Mátrix (1999)",
+            "comment": "",
+            "sound": null,
+            "image": null
+        },{
+            "id": 10004,
+            "question": "Árpád vezér vagy Géza fejedelem",
+            "answer": "Árpád vezér",
+            "comment": "",
+            "sound": null,
+            "image": null
+        },{
+            "id": 10005,
+            "question": "Keresztény vagy iszlám",
+            "answer": "Keresztény",
+            "comment": "",
+            "sound": null,
+            "image": null
+        },{
+            "id": 10006,
+            "question": "Mobiltelefon vagy internet",
+            "answer": "Mobiltelefon",
+            "comment": "",
+            "sound": null,
+            "image": null
+        }
+
+    ]
 }]

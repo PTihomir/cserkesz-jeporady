@@ -1,7 +1,5 @@
-'use strict';
-
 var QuestionViewController = function ($scope, $modalInstance, data) {
-    
+
   $scope.question = data.question;
   $scope.category = data.category;
   $scope.value = data.value;

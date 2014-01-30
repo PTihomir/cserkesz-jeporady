@@ -6,12 +6,12 @@ var file = '/example/database.json',
 
 
 fs.readFile(file, 'utf8', function (err, data) {
-  if (err) {
-    console.log('Error: ' + err);
-    return;
-  }
+    if (err) {
+        console.log('Error: ' + err);
+        return;
+    }
 
-  data = JSON.parse(data);
+    data = JSON.parse(data);
 
-  console.dir(data);
+    console.dir(data);
 });
