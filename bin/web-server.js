@@ -4,15 +4,24 @@ var util = require('util'),
     http = require('http'),
     fs = require('fs'),
     url = require('url'),
-    events = require('events');
+    events = require('events'),
+    jeporadyServer = require('./jeporady.js');
 
 var DEFAULT_PORT = 3000;
 
+var routing = {
+  'mobile': 'app/mobile-screen.html',
+  'narrator': 'app/narrator-screen.html',
+  'main': 'app/main-screen.html'
+}
+
 function main(argv) {
-  new HttpServer({
+  var httpserver = new HttpServer({
     'GET': createServlet(StaticServlet),
     'HEAD': createServlet(StaticServlet)
   }).start(Number(argv[2]) || DEFAULT_PORT);
+
+  var jeporady = jeporadyServer(httpserver.getServer(), Number(argv[3]));
 }
 
 function escapeHtml(value) {
@@ -36,12 +45,19 @@ function createServlet(Class) {
 function HttpServer(handlers) {
   this.handlers = handlers;
   this.server = http.createServer(this.handleRequest_.bind(this));
+
+
 }
+
+HttpServer.prototype.getServer = function() {
+  return this.server;
+};
 
 HttpServer.prototype.start = function(port) {
   this.port = port;
   this.server.listen(port);
   util.puts('Http Server running at http://localhost:' + port + '/');
+  return this;
 };
 
 HttpServer.prototype.parseUrl_ = function(urlString) {
@@ -95,8 +111,10 @@ StaticServlet.prototype.handleRequest = function(req, res) {
   if (parts[parts.length-1].charAt(0) === '.')
     return self.sendForbidden_(req, res, path);
 
-  util.puts(' ------------> ' + path);  
-
+  if (routing[parts[parts.length-1]]) {
+    parts[parts.length-1] = routing[parts[parts.length-1]];
+    self.sendRedirect_(req, res, parts.join('/'));
+  }
 
   fs.stat(path, function(err, stat) {
     if (err)
@@ -193,6 +211,7 @@ StaticServlet.prototype.sendDirectory_ = function(req, res, path) {
   var self = this;
   if (path.match(/[^\/]$/)) {
     req.url.pathname += '/';
+
     var redirectUrl = url.format(url.parse(url.format(req.url)));
     return self.sendRedirect_(req, res, redirectUrl);
   }

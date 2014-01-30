@@ -1,0 +1,37 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>{{category.displayName}}</h1>
+        </div>
+        <div class="col-md-4">
+            <h1>{{value}}</h1>
+        </div>
+
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row question-dialog">
+        <div class="col-md-8">
+            A kérdés: {{question.question}}
+
+            <img ng-if="!!question.image" ng-src="{{question.image}}" style="display: block; min-width: 300px; max-width: 300px;"/>
+        </div>
+        <div class="col-md-4">
+            Teams
+            <ul class="list-unstyled">
+                <li ng-repeat="team in teams" class="team-field">
+                    <div>
+                        <span class="team-name">{{team.name}}</span>
+                        <span class="text-right" ng-if="!!team.actionOrder">! {{team.actionOrder}} !</span>
+                    </div>
+                    <button class="btn btn-primary" ng-click="correctAnswer(team)">Helyes</button>    
+                    <!--button class="btn" ng-click="incorrectAnswer(team)">Téves</button-->    
+                </li> 
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
