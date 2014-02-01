@@ -20,6 +20,11 @@ On Linux run::
 
     ./scripts/run-server.sh
 
+or:
+
+    node ./bin/web-server.js [PORT] [Number of teams]
+
+
 
 On Windows run::
 
