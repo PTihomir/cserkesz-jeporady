@@ -19,3 +19,8 @@ These are the used node-modules:
 * grunt-contrib-nodeunit
 * grunt-contrib-uglify
 * should
+
+
+Everybody should exclude from commit these modules. Go to .git/info/exclude file and add to the end
+
+    node_modules/*
