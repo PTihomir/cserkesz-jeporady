@@ -3,11 +3,11 @@ var fs = require('fs');
 var mainfile = '/database/database.json',
     snapshotDir = '/database/snapshots/',
     gameDir = '/database/games/',
-    questions,
+    categories,
     snapshots,
     games;
 
-// init questions immediately
+// init database immediately
 refreshQuestions();
 refreshSnapshots();
 refreshGames();
@@ -19,9 +19,9 @@ function refreshQuestions() {
             return;
         }
 
-        questions = JSON.parse(data);
+        categories = JSON.parse(data);
 
-        console.log(questions.length + ' question loaded.');
+        console.log(categories.length + ' question loaded.');
 
     });
 }
@@ -57,8 +57,8 @@ function refreshGames() {
 
 
 // TODO change to asynchrunous
-module.exports.getQuestions = function () {
-    return questions;
+module.exports.getCategories = function () {
+    return categories;
 };
 
 module.exports.getSnapshots = function () {
@@ -67,6 +67,41 @@ module.exports.getSnapshots = function () {
 
 module.exports.getGames = function () {
     return games;
+};
+
+module.exports.getCategory = function (categoryId, selectedQuestions) {
+    // iterate and find the category
+    for (var i = 0; i < categories.length; i++) {
+        if (categories[i].id === categoryId) {
+            var data = {
+                id: categories[i].id,
+                displayName: categories[i].displayName,
+                questions: []
+            };
+
+            // find and copy selected questions
+            for (var j = 0; j < selectedQuestions.length; j++) {
+                for (var z = 0; z < categories[i].questions.length; z++) {
+                    if (categories[i].questions[z].id === selectedQuestions[j]) {
+                        var question = categories[i].questions[z];
+                        data.questions.push({
+                            id: question.id,
+                            question: question.question,
+                            answer: question.answer,
+                            comment: question.comment,
+                            sound: question.sound,
+                            image: question.image
+                        });
+                    }
+                }
+            }
+
+            return;
+        }
+    }
+
+    console.warn('Warning: Question with id [' + categoryId + '] not found');
+    return null;
 };
 
 module.exports.getSnapshot = function (filename, callback) {
