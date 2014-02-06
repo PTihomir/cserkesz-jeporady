@@ -8,6 +8,7 @@ Overview
 This web application is developed for creating a tool to play jeporady game with scouts.
 
 Features::
+
 * Something
 
 
@@ -20,7 +21,7 @@ On Linux run::
 
     ./scripts/run-server.sh
 
-or:
+or::
 
     node ./bin/web-server.js [PORT] [Number of teams]
 
