@@ -65,14 +65,17 @@ DynamicServlet.prototype.sendJSON = function(req, res, jsonData) {
 };
 
 DynamicServlet.prototype.fetchQuestions = function() {
+    questions.getCategories();
     return questions.getCategories();
 };
 
 DynamicServlet.prototype.fetchGames = function() {
+    questions.getGames();
     return questions.getGames();
 };
 
 DynamicServlet.prototype.fetchSnapshots = function() {
+    questions.getSnapshots();
     return questions.getSnapshots();
 };
 
