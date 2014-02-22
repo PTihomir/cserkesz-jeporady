@@ -4,10 +4,10 @@ narratorModule.controller('NarratorController', function ($scope, $modal) {
 
     var socket = io.connect('/narrator');
 
-    // socket.on('connect')
-
     socket.on('update', function (data) {
+        alert('update!!');
         console.log(data);
+
         if (data.teams) {
             $scope.teams = data.teams;
         }
@@ -104,20 +104,17 @@ narratorModule.controller('NarratorController', function ($scope, $modal) {
         });
     };
 
-    $scope.gameSelected = function () {
+    // TODO Remove this
+    socket.on('connect', function () {
 
-    }
-
-    function getGames() {
-        $.ajax({
-            url: 'games',
-            type: 'POST'
-        }).done(function(data) {
-            console.log(data);
+        socket.emit('gameSelected', {
+            gameId:  'example.json',
+            snapshotName: 'dummyYEY.json',
+            teamNumber: 2
         });
 
+    });
 
-    }
 
 
 });

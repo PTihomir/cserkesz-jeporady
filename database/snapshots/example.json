@@ -1,4 +1,9 @@
 {
-    "categoryName1": ["question_id", "..."],
-    "categoryName2": ["question_id", "..."]
+    "categories": {
+        "categoryName1": ["question_id", "..."],
+        "categoryName2": ["question_id", "..."]
+    },
+    "teams": {
+
+    }
 }

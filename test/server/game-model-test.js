@@ -8,6 +8,7 @@ var mockQuestions = {
     filename: null,
     data: null,
     gameId: null,
+    snapshotId: null,
     categoryId: null,
     questions: null,
 
@@ -21,13 +22,33 @@ var mockQuestions = {
 
         callback({
             categories: [{
-                id: "category_id",
+                id: 'category_id',
                 questions: [1, 2, 3]
             },{
-                id: "category_id",
+                id: 'category_id',
                 questions: [1, 2, 3]
             }]
         });
+    },
+
+    getSnapshot: function (snapshotId, callback) {
+
+        this.snapshotId = snapshotId;
+
+        callback({
+            categories: [{
+                id: 'category_id',
+                questions: [1, 2, 3]
+            },{
+                id: 'category_id',
+                questions: [1, 2, 3]
+            }],
+            teams: [{
+                id: 'Team1'
+            }]
+        });
+
+
     },
 
     getCategory: function (categoryId, questions) {
@@ -70,6 +91,15 @@ describe('Game model', function(){
 
     describe('Restore Game', function () {
         it('resotre game should initialize everything', function (done) {
+
+            game.continueSnapshot('dummySnapshotId');
+
+            game.snapshotId.should.equal('dummySnapshotId');
+
+            game.teams.getTeams().should.have.a.lengthOf(1);
+
+            mockQuestions.should.have.property('snapshotId', 'dummySnapshotId');
+
             done();
         });
     });

@@ -71,6 +71,8 @@ TeamModel.prototype.getTeam = function (id) {
 TeamModel.prototype.initTeams = function (n) {
     var teamCount = n || 3;
 
+    console.log('TeamModel initialized with "' + n + '" teams.');
+
     for (var i = 0; i < teamCount; i++) {
         this.addTeam();
     }

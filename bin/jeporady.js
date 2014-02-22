@@ -17,6 +17,9 @@ JeporadyServer.prototype.initSocket = function() {
 
     var io = this.io = socketio.listen(this.server);
 
+    this.initNarratorSocket();
+    this.initDisplaySocket();
+
     // init model
     // FIXME add command line parameter for the player number
 
@@ -84,11 +87,28 @@ JeporadyServer.prototype.initNarratorSocket = function() {
 
     var narrator = this.narrator = this.io.of('/narrator').on('connection', function (socket) {
 
-        console.log('Narrator connected');
+        console.log('**************** Narrator connected');
 
-        socket.emit('updateTeams', {teams: teams.getTeams()});
+        if (_this.teams) {
+            console.log('**************** GAME OK');
+            socket.emit('updateTeams', {teams: _this.teams.getTeams()});
+        } else {
+            console.log('**************** GAME NOT INITIALIZED');
+        }
 
         socket.on('gameSelected', function (data) {
+            _this.game.newGame(data.gameId, data.snapshotName, data.teamNumber);
+
+            _this.teams = _this.game.teams;
+
+            _this.emitGameUpdated();
+
+            _this.emitTeamsUpdated();
+
+
+        });
+
+        socket.on('snapshotSelected', function (data) {
             _this.game.newGame(data.gameId, data.snapshotName);
 
             _this.teams = _this.game.teams;
@@ -103,8 +123,6 @@ JeporadyServer.prototype.initNarratorSocket = function() {
         socket.on('teamChanged', function (data) {
             _this.teams.updateTeam(data.id, data);
 
-
-
         });
 
         socket.on('questionUpdated', function (data) {
@@ -116,6 +134,25 @@ JeporadyServer.prototype.initNarratorSocket = function() {
     });
 
 };
+
+JeporadyServer.prototype.initDisplaySocket = function() {
+
+    var _this = this;
+
+    var display = this.display = this.io.of('/display').on('connection', function (socket) {
+
+        console.log('**************** Display connected');
+
+        if (_this.teams) {
+            socket.emit('updateTeams', {teams: _this.teams.getTeams()});
+        } else {
+            console.log('**************** GAME NOT INITIALIZED');
+        }
+
+    });
+
+};
+
 
 JeporadyServer.prototype.emitGameUpdated = function() {
 

@@ -32,7 +32,7 @@ GameModel.prototype.readGame = function (gameId, callback) {
 
 };
 
-GameModel.prototype.newGame = function (gameId, snapshotId) {
+GameModel.prototype.newGame = function (gameId, snapshotId, teamNumber) {
 
     var _this = this;
     // TODO check, if game already initialized, then this should exit
@@ -42,9 +42,21 @@ GameModel.prototype.newGame = function (gameId, snapshotId) {
         _this.categories = categories;
     });
 
-    this.teams.initTeams();
+    this.teams.initTeams(teamNumber);
 
     this.saveSnapshot();
+
+};
+
+GameModel.prototype.continueSnapshot = function (snapshotId) {
+
+    var _this = this;
+
+    this.snapshotId = snapshotId;
+
+    this.questions.getSnapshot(snapshotId, function (snapshot) {
+        _this.restoreGame(snapshot);
+    });
 
 };
 
@@ -53,7 +65,7 @@ GameModel.prototype.restoreGame = function (snapshot) {
     // TODO check, if game already initialized, then this should exit
 
     this.categories = snapshot.categories;
-    this.teams.setTeams(snapshot.teams);
+    this.teams.import(snapshot.teams);
 };
 
 GameModel.prototype.saveSnapshot = function () {
