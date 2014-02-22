@@ -70,6 +70,7 @@ module.exports.getGames = function () {
 };
 
 module.exports.getCategory = function (categoryId, selectedQuestions) {
+
     // iterate and find the category
     for (var i = 0; i < categories.length; i++) {
         if (categories[i].id === categoryId) {
@@ -96,7 +97,7 @@ module.exports.getCategory = function (categoryId, selectedQuestions) {
                 }
             }
 
-            return;
+            return data;
         }
     }
 

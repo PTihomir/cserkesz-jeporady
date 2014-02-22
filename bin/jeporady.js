@@ -96,15 +96,21 @@ JeporadyServer.prototype.initNarratorSocket = function() {
             console.log('**************** GAME NOT INITIALIZED');
         }
 
-        socket.on('gameSelected', function (data) {
-            _this.game.newGame(data.gameId, data.snapshotName, data.teamNumber);
+        socket.on('gameSelected', function (data, callback) {
 
-            _this.teams = _this.game.teams;
+            _this.game.newGame(data.gameId, data.snapshotName, data.teamNumber, function () {
 
-            _this.emitGameUpdated();
+                _this.teams = _this.game.teams;
 
-            _this.emitTeamsUpdated();
+                _this.emitGameUpdated();
 
+                _this.emitTeamsUpdated();
+
+                if (callback) {
+                    callback(true);
+                }
+
+            });
 
         });
 

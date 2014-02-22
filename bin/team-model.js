@@ -71,6 +71,11 @@ TeamModel.prototype.getTeam = function (id) {
 TeamModel.prototype.initTeams = function (n) {
     var teamCount = n || 3;
 
+    if (this.teams.length) {
+        console.warn('TeamModel already initialized, everything resets now.');
+        this.teams.length = 0;
+    }
+
     console.log('TeamModel initialized with "' + n + '" teams.');
 
     for (var i = 0; i < teamCount; i++) {

@@ -32,19 +32,29 @@ GameModel.prototype.readGame = function (gameId, callback) {
 
 };
 
-GameModel.prototype.newGame = function (gameId, snapshotId, teamNumber) {
+GameModel.prototype.newGame = function (gameId, snapshotId, teamNumber, callback) {
+
+    console.log('New Game created with gameId "' + gameId + '" and snapshotId "' +snapshotId + '"');
 
     var _this = this;
-    // TODO check, if game already initialized, then this should exit
+
+    if (this.snapshotId) {
+        console.log('Game already initialized, everything resets now');
+    }
+
     this.snapshotId = snapshotId.replace(/ /g,"_");
 
     this.readGame(gameId, function (categories) {
         _this.categories = categories;
+
+        _this.teams.initTeams(teamNumber);
+
+        _this.saveSnapshot();
+
+        callback();
+
     });
 
-    this.teams.initTeams(teamNumber);
-
-    this.saveSnapshot();
 
 };
 

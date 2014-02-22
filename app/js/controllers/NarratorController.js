@@ -1,12 +1,10 @@
 'use strict';
 
-narratorModule.controller('NarratorController', function ($scope, $modal) {
+narratorModule.controller('NarratorController', function ($scope, $modal, $window) {
 
     var socket = io.connect('/narrator');
 
     socket.on('update', function (data) {
-        alert('update!!');
-        console.log(data);
 
         if (data.teams) {
             $scope.teams = data.teams;
@@ -105,15 +103,17 @@ narratorModule.controller('NarratorController', function ($scope, $modal) {
     };
 
     // TODO Remove this
-    socket.on('connect', function () {
+    $scope.initializeDummyGame = function () {
 
         socket.emit('gameSelected', {
             gameId:  'example.json',
             snapshotName: 'dummyYEY.json',
             teamNumber: 2
+        }, function (data) {
+        //    $window.location.reload();
         });
 
-    });
+    };
 
 
 

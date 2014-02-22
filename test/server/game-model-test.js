@@ -73,18 +73,19 @@ describe('Game model', function(){
     describe('New Game', function(){
         it('new game should initialize everything', function (done) {
 
-            game.newGame('dummyGameId', 'Some Game');
+            game.newGame('dummyGameId', 'Some Game', 3, function () {
+
+                game.teams.getTeams().should.have.a.lengthOf(3);
+
+                mockQuestions.filename.should.equal('Some_Game');
+                mockQuestions.data.should.have.property('categories');
+                mockQuestions.data.should.have.property('teams');
+                mockQuestions.data.should.have.property('snapshotId', 'Some_Game');
+
+                done();
+            });
 
             game.snapshotId.should.equal('Some_Game');
-
-            game.teams.getTeams().should.have.a.lengthOf(3);
-
-            mockQuestions.filename.should.equal('Some_Game');
-            mockQuestions.data.should.have.property('categories');
-            mockQuestions.data.should.have.property('teams');
-            mockQuestions.data.should.have.property('snapshotId', 'Some_Game');
-
-            done();
         });
 
     });
