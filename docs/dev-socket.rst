@@ -12,10 +12,9 @@ Select which game to play (new game)::
 
 Select which snapshot to load (continue game)::
 
-    narrator ------ gameSelected -----> server
+    narrator ------ snapshotSelected -----> server
                     {
-                        gameId
-                        snapshotName
+                        snapshotId
                     }
 
 
@@ -27,11 +26,14 @@ Server updates narrator screen::
                         teams
                     }
 
+Send team changes to server screen::
+
     narrator ------ teamChanged -----> server
                     {
                         id
                         point
                         name
+                        operation [update, add, remove]
                     }
 
     narrator ------ questionUpdated ----> server

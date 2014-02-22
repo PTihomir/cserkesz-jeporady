@@ -31,28 +31,28 @@
                 <div class="col-sm-2" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
                     <h4 class="text-center">{{team.name}}</h4>
                     <h2 class="text-center"><span class="point">{{team.point}}</span> <span class="text">pont</span></h2>
-                </div>    
+                </div>
             </div> -->
             <div class="row team-container" ng-show="teams.length === 2">
                 <div class="col-sm-4" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
                     <div class="team-name text-center">{{team.name}}</div>
                     <div class="point text-center">{{team.point}}</div>
                     <div class="point-label text-center">pont</div>
-                </div>    
+                </div>
             </div>
             <div class="row team-container" ng-show="teams.length === 3">
                 <div class="col-sm-2" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first, 'col-sm-offset-1': !$first}">
                     <div class="team-name text-center">{{team.name}}</div>
                     <div class="point text-center">{{team.point}}</div>
                     <div class="point-label text-center">pont</div>
-                </div>    
+                </div>
             </div>
             <div class="row team-container" ng-show="teams.length === 4">
                 <div class="col-sm-2" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
                     <div class="team-name text-center">{{team.name}}</div>
                     <div class="point text-center">{{team.point}}</div>
                     <div class="point-label text-center">pont</div>
-                </div>    
+                </div>
             </div>
         </div>
 
@@ -67,7 +67,7 @@
 
 
         <script src="js/plugins.js"></script>
-        
+
         <!-- Project files -->
         <script src="js/Jeporady.js"></script>
         <script src="js/controllers/JeporadyController.js"></script>

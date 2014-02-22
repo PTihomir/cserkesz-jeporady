@@ -1,23 +1,28 @@
 var socketio = require('socket.io'),
-    model = require('./teams.js'),
+    teammodel = require('./team-model.js'),
+    gamemodel = require('./game-model.js'),
     questions = require('./questions.js');
 
 function JeporadyServer(server, teamNumber) {
     this.server = server;
-    this.initSocket(teamNumber);
+
+    this.game = gamemodel(questions, teammodel);
+
+    this.teams = null;
+
+    this.initSocket();
 }
 
-JeporadyServer.prototype.initSocket = function(teamNumber) {
+JeporadyServer.prototype.initSocket = function() {
 
     var io = this.io = socketio.listen(this.server);
 
     // init model
     // FIXME add command line parameter for the player number
-    model.initTeams(teamNumber);
 
     // FIXME now its mandatory to connect mobile clients.
     // Fix this so its only an option.
-    var mobile = io.of('/mobile').on('connection', function (socket) {
+/*    var mobile = io.of('/mobile').on('connection', function (socket) {
 
         var id = model.getUniqueId();
 
@@ -47,8 +52,8 @@ JeporadyServer.prototype.initSocket = function(teamNumber) {
         });
 
     });
-
-    var display = io.of('/display').on('connection', function (socket) {
+*/
+/*    var display = io.of('/display').on('connection', function (socket) {
 
         socket.emit('updateTeams', {teams: model.getTeams()});
 
@@ -68,8 +73,86 @@ JeporadyServer.prototype.initSocket = function(teamNumber) {
 
 
     });
+*/
 
 };
+
+
+JeporadyServer.prototype.initNarratorSocket = function() {
+
+    var _this = this;
+
+    var narrator = this.narrator = this.io.of('/narrator').on('connection', function (socket) {
+
+        console.log('Narrator connected');
+
+        socket.emit('updateTeams', {teams: teams.getTeams()});
+
+        socket.on('gameSelected', function (data) {
+            _this.game.newGame(data.gameId, data.snapshotName);
+
+            _this.teams = _this.game.teams;
+
+            _this.emitGameUpdated();
+
+            _this.emitTeamsUpdated();
+
+
+        });
+
+        socket.on('teamChanged', function (data) {
+            _this.teams.updateTeam(data.id, data);
+
+
+
+        });
+
+        socket.on('questionUpdated', function (data) {
+
+        });
+
+
+
+    });
+
+};
+
+JeporadyServer.prototype.emitGameUpdated = function() {
+
+    var data = {
+        game: this.game.categories
+    };
+
+    this.narrator.emit('update', data);
+
+    this.display.emit('update', data);
+
+};
+
+JeporadyServer.prototype.emitTeamsUpdated = function() {
+
+    var data = {
+        teams: this.game.teams
+    };
+
+    this.narrator.emit('update', data);
+
+    this.display.emit('update', data);
+
+};
+
+JeporadyServer.prototype.emitTeamUpdated = function(id) {
+
+    var data = {
+        team: this.game.teams
+    };
+
+    this.narrator.emit('update', data);
+
+    this.display.emit('update', data);
+
+};
+
 
 module.exports = function(server) {
     return new JeporadyServer(server);

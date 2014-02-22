@@ -1,0 +1,8 @@
+<div>
+    <form style="margin: auto">
+        <label>PIN: <input type="password" ng-model="enteredPassword"></label><br/>
+        <button class="btn btn-primary" ng-click="login()">Bejelentkezes</button>
+        <div class="text-danger bg-danger" ng-show="passwordInvalidMessage">{{passwordInvalidMessage}}</div>
+
+    </form>
+</div>

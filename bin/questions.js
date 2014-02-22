@@ -1,8 +1,8 @@
 var fs = require('fs');
 
-var mainfile = '/database/database.json',
-    snapshotDir = '/database/snapshots/',
-    gameDir = '/database/games/',
+var mainfile = './database/database.json',
+    snapshotDir = './database/snapshots/',
+    gameDir = './database/games/',
     categories,
     snapshots,
     games;

@@ -33,11 +33,13 @@ GameModel.prototype.readGame = function (gameId, callback) {
 };
 
 GameModel.prototype.newGame = function (gameId, snapshotId) {
+
+    var _this = this;
     // TODO check, if game already initialized, then this should exit
     this.snapshotId = snapshotId.replace(/ /g,"_");
 
     this.readGame(gameId, function (categories) {
-        this.categories = categories;
+        _this.categories = categories;
     });
 
     this.teams.initTeams();

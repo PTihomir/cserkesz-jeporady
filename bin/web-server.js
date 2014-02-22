@@ -3,6 +3,7 @@ var util = require('util'),
     fs = require('fs'),
     url = require('url'),
     events = require('events'),
+    dynamicServlet = require('./dynamic-servlet.js'),
     jeporadyServer = require('./jeporady.js');
 
 var DEFAULT_PORT = 3000;
@@ -18,6 +19,7 @@ var routing = {
 function main(argv) {
     var httpserver = new HttpServer({
         'GET': createServlet(StaticServlet),
+        'POST': createServlet(dynamicServlet.servlet),
         'HEAD': createServlet(StaticServlet)
     }).start(Number(argv[2]) || DEFAULT_PORT);
 
