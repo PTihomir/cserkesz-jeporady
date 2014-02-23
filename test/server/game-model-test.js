@@ -93,15 +93,17 @@ describe('Game model', function(){
     describe('Restore Game', function () {
         it('resotre game should initialize everything', function (done) {
 
-            game.continueSnapshot('dummySnapshotId');
+            game.continueSnapshot('dummySnapshotId', function () {
 
-            game.snapshotId.should.equal('dummySnapshotId');
+                game.snapshotId.should.equal('dummySnapshotId');
 
-            game.teams.getTeams().should.have.a.lengthOf(1);
+                game.teams.getTeams().should.have.a.lengthOf(1);
 
-            mockQuestions.should.have.property('snapshotId', 'dummySnapshotId');
+                mockQuestions.should.have.property('snapshotId', 'dummySnapshotId');
 
-            done();
+                done();
+
+            });
         });
     });
 

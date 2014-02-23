@@ -1,6 +1,11 @@
 'use strict';
 
-narratorModule.controller('MenuController', function ($scope, $location) {
+narratorModule.controller('MenuController', function ($scope, $location, loginStatus, socketInstance) {
+
+    if (!loginStatus.validLogin) {
+        $location.path('/login');
+        return;
+    }
 
     $scope.games     = [];
     $scope.snapshots = [];
@@ -10,9 +15,6 @@ narratorModule.controller('MenuController', function ($scope, $location) {
         teamnumber: 3,
         snapshot: 0,
     };
-
-    var socket = io.connect('/narrator');
-
 
     $scope.loadData = function () {
 
@@ -50,7 +52,7 @@ narratorModule.controller('MenuController', function ($scope, $location) {
             var name = result.gamename + '.json';
             for (var i = $scope.snapshots.length; i >= 0; i--) {
                 if (name == $scope.snapshots[i]) {
-                    if (confirm('Figyelem! Felül szeretné írni létező pillanatképet?') === 1) {
+                    if (confirm('Figyelem! Felül szeretné írni létező pillanatképet?')) {
                         continue;
                     } else {
                         return;
@@ -65,17 +67,19 @@ narratorModule.controller('MenuController', function ($scope, $location) {
                 return;
             }
 
-            socket.emit('gameSelected', {
+            socketInstance.emit('gameSelected', {
                 gameId: result.game,
                 snapshotName: result.gamename + '.json',
                 teamNumber: result.teamnumber
             }, function() {
-                $location.path('/game').replace();
+                $location.path('/game');
+                $scope.$apply();
             });
         }
         else if (result.snapshot !== 0) {
-            socket.emit('snapshotSelected', { snapshotId: result.snapshot }, function() {
-                $location.path('/game').replace();
+            socketInstance.emit('snapshotSelected', { snapshotId: result.snapshot }, function() {
+                $location.path('/game');
+                $scope.$apply();
             });
         }
         else {

@@ -58,7 +58,7 @@ GameModel.prototype.newGame = function (gameId, snapshotId, teamNumber, callback
 
 };
 
-GameModel.prototype.continueSnapshot = function (snapshotId) {
+GameModel.prototype.continueSnapshot = function (snapshotId, callback) {
 
     var _this = this;
 
@@ -66,6 +66,8 @@ GameModel.prototype.continueSnapshot = function (snapshotId) {
 
     this.questions.getSnapshot(snapshotId, function (snapshot) {
         _this.restoreGame(snapshot);
+
+        callback();
     });
 
 };

@@ -150,5 +150,6 @@ module.exports.saveSnapshot = function (filename, data) {
     fs.writeFile(snapshotDir + filename, stringedData, function (err) {
         if (err) throw err;
         console.log('Snapshot is saved!');
+        refreshSnapshots();
     });
 };

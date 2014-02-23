@@ -87,14 +87,20 @@ JeporadyServer.prototype.initNarratorSocket = function() {
 
     var narrator = this.narrator = this.io.of('/narrator').on('connection', function (socket) {
 
-        console.log('**************** Narrator connected');
+        console.log('** Narrator connected');
 
-        if (_this.teams) {
-            console.log('**************** GAME OK');
-            socket.emit('updateTeams', {teams: _this.teams.getTeams()});
-        } else {
-            console.log('**************** GAME NOT INITIALIZED');
-        }
+        socket.on('requestUpdate', function (data, callback) {
+            if (_this.teams) {
+                console.log('** GAME OK');
+                socket.emit('update', {
+                    teams: _this.teams.getTeams(),
+                    game: _this.game.categories
+                });
+            } else {
+                console.log('** GAME NOT INITIALIZED');
+                socket.emit('invalidGameState', {});
+            }
+        });
 
         socket.on('gameSelected', function (data, callback) {
 
@@ -114,15 +120,20 @@ JeporadyServer.prototype.initNarratorSocket = function() {
 
         });
 
-        socket.on('snapshotSelected', function (data) {
-            _this.game.newGame(data.gameId, data.snapshotName);
+        socket.on('snapshotSelected', function (data, callback) {
+            _this.game.continueSnapshot(data.snapshotId, function () {
 
-            _this.teams = _this.game.teams;
+                _this.teams = _this.game.teams;
 
-            _this.emitGameUpdated();
+                _this.emitGameUpdated();
 
-            _this.emitTeamsUpdated();
+                _this.emitTeamsUpdated();
 
+                if (callback) {
+                    callback(true);
+                }
+
+            });
 
         });
 

@@ -1,5 +1,4 @@
 <div class="container">
-    <div class="row"><button ng-click="initializeDummyGame()">Init game</button></div>
     <div class="row">
         <ul class="col-sm-2 category" ng-repeat="category in categories" ng-class="{'col-sm-offset-1': {{$first && categories.length === 5}}}" data-value="{{$first && categories.length === 5}}">
             <li class="question-title text-center">

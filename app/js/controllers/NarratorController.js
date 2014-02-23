@@ -1,10 +1,13 @@
 'use strict';
 
-narratorModule.controller('NarratorController', function ($scope, $modal, $window) {
+narratorModule.controller('NarratorController', function ($scope, $modal, $location, loginStatus, socketInstance) {
 
-    var socket = io.connect('/narrator');
+    if (!loginStatus.validLogin) {
+        $location.path('/login');
+        return;
+    }
 
-    socket.on('update', function (data) {
+    socketInstance.on('update', function (data) {
 
         if (data.teams) {
             $scope.teams = data.teams;
@@ -16,7 +19,15 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $windo
         $scope.$apply();
     });
 
-    socket.on('clientAction', function (data) {
+    socketInstance.on('invalidGameState', function () {
+
+        // Game not initialized, return to "menu"
+        $location.path('/menu');
+        $scope.$apply();
+
+    });
+
+    socketInstance.on('clientAction', function (data) {
         for (var i = 0; i < data.actions.length; i++) {
             $scope.teams[data.actions[i]].actionOrder = i + 1;
         }
@@ -25,7 +36,7 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $windo
     });
 
     $scope.resetTeams = function () {
-        socket.emit('resetTeams');
+        socketInstance.emit('resetTeams');
         $.each($scope.teams, function (index, team) {
             team.actionOrder = false;
         });
@@ -43,7 +54,7 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $windo
             });
 
         modalInstance.result.then(function () {
-            socket.emit('changeTeam', {
+            socketInstance.emit('changeTeam', {
                 id: team.id,
                 name: team.name,
                 point: team.point
@@ -92,7 +103,7 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $windo
         });
 
         modalInstance.result.then(function (team) {
-            socket.emit('changeTeam', {
+            socketInstance.emit('changeTeam', {
                 id: team.id,
                 name: team.name,
                 point: team.point
@@ -102,19 +113,10 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $windo
         });
     };
 
-    // TODO Remove this
-    $scope.initializeDummyGame = function () {
-
-        socket.emit('gameSelected', {
-            gameId:  'example.json',
-            snapshotName: 'dummyYEY.json',
-            teamNumber: 2
-        }, function (data) {
-        //    $window.location.reload();
-        });
-
+    $scope.requestUpdate = function () {
+        socketInstance.emit('requestUpdate');
     };
 
-
+    $scope.requestUpdate();
 
 });
