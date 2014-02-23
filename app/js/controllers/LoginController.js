@@ -9,7 +9,7 @@ narratorModule.controller('LoginController', function ($scope, $location) {
         if ($scope.enteredPassword === '') {
             $scope.passwordInvalidMessage = 'Enter password!';
         } else if ($scope.enteredPassword === '2382') {
-            $location.path('/game').replace();
+            $location.path('/menu').replace();
         } else {
             $scope.passwordInvalidMessage = 'Wrong password!';
         }

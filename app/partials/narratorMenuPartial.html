@@ -1,5 +1,39 @@
-<div>
-    <button class="btn btn-primary" ng-click="">New Game</button>
-    <button class="btn btn-default" ng-click="">Continue</button>
-    <button class="btn btn-default" ng-click="">Load</button>
-</div>
+<form role="form">
+    <div class="row" ng-init="loadData()">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="gameslist">Játék lista</label>
+                <select id="gameslist" ng-model="result.game" size="{{games.length}}">
+                    <option value="0">-- Válasszon --</option>
+                    <option ng-repeat="g in games" value="{{g}}">{{g}}</option>            
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gamename">Játék neve</label>
+                <input type="text" id="gamename" ng-model="result.gamename">
+            </div>
+
+            <div class="form-group">
+                <label for="teamnumber">Csapatok száma</label>
+                <input type="text" id="teamnumber" ng-model="result.teamnumber">
+            </div>
+
+            <div class="form-group">
+                <hr>
+            </div>
+
+            <div class="form-group">
+                <label for="snapshot">Pillanatkép lista</label>
+                <select id="snapshot" ng-model="result.snapshot" size="{{snapshots.length}}">
+                    <option value="0">-- Válasszon --</option>
+                    <option ng-repeat="s in snapshots" value="{{s}}">{{s}}</option>            
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-default" ng-click="startGame()">Kezdés</button>
+            </div>
+        </div>
+    </div>
+</form>
