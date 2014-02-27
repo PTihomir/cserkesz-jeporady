@@ -1,302 +1,2438 @@
-[{
-	"id": "allatosMesek",
-	"tags": "mese, allatok",
-    "displayName": "Állatos mesék",
+[
+  {
+    "id": "elsosegely_kcs_1",
+    "displayName": "Segíts, ha tudsz 1!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Lajhár, mamut, kardfogú tigris, motkány",
-            "answer": "Jégkorszak",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "Tyúk, béka, kacsa, kutya, róka, liba",
-            "answer": "Vuk",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Kígyó, daru, majom, szöcske, panda",
-            "answer": "Kung Fu Panda",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Szamár, kutya, macska, kakas",
-            "answer": "Bérmai muzsikusok",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Medve, farkas, tigris, fekete párduc",
-            "answer": "A dzsungel könyve",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Darázs, kakas",
-            "answer": "Kiskakas és a gyémánt félkrajcár",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10001,
+        "question": "Mi a láz alsó értéke?",
+        "answer": "38",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10002,
+        "question": "Definiáld a láz fogalmát.",
+        "answer": "Láznak nevezzük a hőmérséklet emelkedését.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10003,
+        "question": "Hány liter vizet kell meginnia egy felnőttnek egy nap alatt átlagosan? 2-3 vagy 4-5 litert",
+        "answer": "2-3 litert",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10004,
+        "question": "Hány belégzést végez egy felnőtt egy perc alatt átlagosan?",
+        "answer": "12-16",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10005,
+        "question": "Ha nyílt törést látunk, mit teszünk?",
+        "answer": "Befedjük gézzel a sebet, és rögzítjük a törött végtagot.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10006,
+        "question": "Mi a vérnyomás?",
+        "answer": "A vérnek az erekre gyakorolt nyomását jelenti.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-},{
-	"id": "csomok",
-    "displayName": "Csomók",
+  },
+  {
+    "id": "elsosegely_kcs_2",
+    "displayName": "Segíts, ha tudsz 2!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Egyszerű kettős",
-            "answer": "",
-            "image": "img/allohurok.png",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "Svábhurok",
-            "image": "img/svabhurok.jpg",
-            "answer": "",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Ívelt kettős",
-            "image": "img/ivelt_kettos.png",
-            "answer": "",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10004,
-            "question": "Szorító nyolcas",
-            "image": "img/szorito_nyolcas.jpg",
-            "answer": "",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10005,
-            "question": "Állóhurok (Sárkányhurok)",
-            "image": "img/allohurok.png",
-            "answer": "",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10006,
-            "question": "Sátorfeszítő",
-            "image": "img/satorfeszito.jpg",
-            "answer": "",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10007,
+        "question": "Milyen telefonszámon érhető el a mentő állomás?",
+        "answer": "194",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10008,
+        "question": "Hány percig kell fogat mosni átlagosan? 5, 10, vagy 15 percig",
+        "answer": "10 percig",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10009,
+        "question": "Hányszor kell egy nap fogat mosni?",
+        "answer": "Minden étkezés után és este lefekvés előtt. VAGY 4-5x",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10010,
+        "question": "Nevezd meg az égési sérülések négy fokozatát!",
+        "answer": "Első-, másod-, harmad-, negyedfokú.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10011,
+        "question": "Mi a pulzus?",
+        "answer": "A pulzus a szív percenkénti összehúzódását jelenti.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10012,
+        "question": "Mit jelent ha valaki eszméletlen?",
+        "answer": "Ha az élet funkciók megvannak, de nem reagál a környezet ingereire.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-},{
-	"id": "fovarosok",
-    "displayName": "Fővárosok",
+  },
+  {
+    "id": "elsosegely_kcs_3",
+    "displayName": "Segíts, ha tudsz 3!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Belgrád magyar neve?",
-            "answer": "Nándorfehérvár",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "Budapest kerületeink a száma?",
-            "answer": "23",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "New York közkedvelt megnevezése.",
-            "answer": "Bigg Apple / Nagy Alma",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10004,
-            "question": "Párizs lakossága.",
-            "answer": "2.243.833 / 2-3 millió",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10005,
-            "question": "Ebben a fővárosban hunyt el Wolfgang Amadeus Mozart.",
-            "answer": "Bécs",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10006,
-            "question": "Canberra melyik ország fővárosa?",
-            "answer": "Ausztrália",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10013,
+        "question": "Hány fokozata van az égési sérüléseknek? Válaszd ki a helyes választ! 2, 3, 4",
+        "answer": "4",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10014,
+        "question": "Milyen vérzéseket ismersz? Válaszd ki a kakukktojást! Artériás, vénás, ujjból folyó, hajszáleres, kapilláris vérzés.",
+        "answer": "ujjból folyó",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10015,
+        "question": "Mit jelent az immobilizálás? A. rögzítést jelent, B. testhelyzetet jelent, C. egy új telefon márkát jelent",
+        "answer": "A. rögzítést jelent",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10016,
+        "question": "Mennyi a normális pulzus érték felnőtteknél? A. Percenként 70-110, B. Perceként 60-100 között.",
+        "answer": "B. Perceként 60-100",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10017,
+        "question": "Mit teszünk ha valaki eszméletét veszti? A.Stabil oldalfektetésbe helyezzük a beteget, B. megvárjuk még eszméletéhez tér, C. legyezni kezdjük és leöntjük egy pohár vízzel.",
+        "answer": "A. Stabil oldalfektetésbe helyezzük a beteget",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10018,
+        "question": "Mik az allergiás reakciójellemző tünetei? Válaszd ki: Tüsszögés, orrfolyás, orrdugulás, könnyezés, szemviszketés, hányás.",
+        "answer": "Tüsszögés, orrfolyás, orrdugulás, könnyezés, szemviszketés",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-},{
-	"id": "talaloskerdes",
-    "displayName": "Találd ki",
+  },
+  {
+    "id": "elsosegely_cs_1",
+    "displayName": "Segíts, ha tudsz 1!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Ugrik - pedig lába nincsen, röpül - pedig szárnya sincsen, mindig pufók, kerek arca piros, sárga, kék, vagy tarka. Mi az?",
-            "answer": "Labda",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "Ha feldobom fehér, ha leesik sárga. Mi az? ",
-            "answer": "Tojás",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Híd, de sosem építették, hét színe van, egy se festék. Földbõl nyúlik mindkét vége, mégis felvezet az égbe. Senki nem szed rajta vámot, széles útját mégse járod, mert a hídfõt nem találod. Mi az? ",
-            "answer": "Szivárvány",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10004,
-            "question": "Három szép nyulat lõtt két fiú és két apa, mégis egy egészet vitt mindegyik haza. Hogy lehet ez? ",
-            "answer": "Hárman voltak: nagyapa, apa, fia.",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10005,
-            "question": "Milyen kavicsból van a legtöbb a patakban?",
-            "answer": "Vizesből",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10006,
-            "question": "Uralkodik mindenhol, veszekedik akárhol. Falun ébresztõóra, városban jó vacsora. Mi az? ",
-            "answer": "Kakas",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10019,
+        "question": "Mennyi a normális vérnyomás érték? 120/80 vagy 140/ 90 Hgmm",
+        "answer": "120/80 Hgmm",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10020,
+        "question": "Az asztmás betegek hol érzik jobban magukat: hegyen vagy lapályban",
+        "answer": "hegyen",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10021,
+        "question": "Mi a láz 3 fő tünete?",
+        "answer": "Testhőmérséklet emelkedés, hideg rázás, étvágytalanság",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10022,
+        "question": "Dohányzás elleni érvek (négy darabot)?",
+        "answer": "Szennyezi a környezetet, egészségtelen, büdös, függőséget okoz.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10023,
+        "question": "Mik a fagyás jellemző tünetei? Válaszd ki a helyes választ! Hideg tapintású bőr, izzadás, hidegrázás, álmosság, éhség érzet, magas vérnyomás",
+        "answer": "Hideg tapintású bőr, hidegrázás, álmosság.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10024,
+        "question": "Mik a kígyómarás fő jellemzői (négy darabot)?",
+        "answer": "Marás helyén duzzanat, zavartság, izomgörcs, bénulás.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-},{
-	"id": "idosebb",
-    "displayName": "Idősebb",
+  },
+  {
+    "id": "elsosegely_cs_2",
+    "displayName": "Segíts, ha tudsz 2!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Vonat vagy autó",
-            "answer": "Vonat",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "T-Rex vagy Steganosaurus",
-            "answer": "Steganosaurus",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Mátrix első része vagy Gyűrűk ura első része",
-            "answer": "Mátrix (1999)",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10004,
-            "question": "Árpád vezér vagy Géza fejedelem",
-            "answer": "Árpád vezér",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10005,
-            "question": "Keresztény vagy iszlám",
-            "answer": "Keresztény",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10006,
-            "question": "Mobiltelefon vagy internet",
-            "answer": "Mobiltelefon",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10025,
+        "question": "Milyen csonttörések vannak?",
+        "answer": "Nyílt és zárt törés",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10026,
+        "question": "Milyen eszközt használunk vérzéscsillapításra?",
+        "answer": "Géz",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10027,
+        "question": "Mikor kell immobilizálni? A. Ha vérzik a beteg, B. Csonttörés esetén, C. Amikor a beteg fáradt hogy tartsa a végtagjait",
+        "answer": "B. Csonttörés esetén",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10028,
+        "question": "Hogyan tesszük szabaddá a légutakat fulladás esetén? A. A nyelv kiemelésével  B. Megkérdjük a beteget hogy nyissa nagyobbra a száját",
+        "answer": "A. A nyelv kiemelésével ",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10029,
+        "question": "Mik a napszúrás jellemző tünetei? Válaszd ki az EGY DARAB HELYTELEN választ: Fejfájás, szédülés, hajhullás, hányinger, hányás",
+        "answer": "hajhullás",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10030,
+        "question": "Mi a shock? A. Amikor valaki nem tud beszélni, mert annyira megijedt, B. Keringési elégtelenséget jelent, C. a shock egy veszélyes gyógyszerkészítmény.",
+        "answer": "B. Keringési elégtelenséget jelent",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-},{
-    "id": "helyesiras",
-    "displayName": "Helytelen kakukktojás",
+  },
+  {
+    "id": "elsosegely_cs_3",
+    "displayName": "Segíts, ha tudsz 3!",
     "questions": [
-        {
-            "id": 10001,
-            "question": "Vonat vagy autó",
-            "answer": "Vonat",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10002,
-            "question": "T-Rex vagy Steganosaurus",
-            "answer": "Steganosaurus",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10003,
-            "question": "Mátrix első része vagy Gyűrűk ura első része",
-            "answer": "Mátrix (1999)",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10004,
-            "question": "Árpád vezér vagy Géza fejedelem",
-            "answer": "Árpád vezér",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10005,
-            "question": "Keresztény vagy iszlám",
-            "answer": "Keresztény",
-            "comment": "",
-            "sound": null,
-            "image": null
-        },{
-            "id": 10006,
-            "question": "Mobiltelefon vagy internet",
-            "answer": "Mobiltelefon",
-            "comment": "",
-            "sound": null,
-            "image": null
-        }
-
+      {
+        "id": 10031,
+        "question": "Hány tejfoga van egy gyermeknek? Válaszd ki a helyes választ: 15, 20, 25",
+        "answer": "20",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10032,
+        "question": "Mire használjuk a Heimlich-féle műfogást? Válaszd ki a helyes választ: hányás ellen vagy félrenyelés esetén",
+        "answer": "félrenyelés esetén",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10033,
+        "question": "Hány csontja van egy felnőtt embernek összesen? 206 vagy 216",
+        "answer": "206",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10034,
+        "question": "Újraélesztés során hova végezhetünk be fúvást?",
+        "answer": "Száj, orr",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10035,
+        "question": "Mik az első fokú égési sérülés jellemző tünetei? Válaszd ki az EGYETLEN HELYTELEN választ! Hólyagos, vörös, száraz, fájdalmas",
+        "answer": "Hólyagos",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10036,
+        "question": "Nevezz meg 3 lázcsillapító gyógyszert.",
+        "answer": "Paracetamol, Analgin, Brufen",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
     ]
-}]
+  },
+  {
+    "id": "elsosegely_cs_4",
+    "displayName": "Segíts, ha tudsz 4!",
+    "questions": [
+      {
+        "id": 10037,
+        "question": "Hány maradandó foga van egy felnőttnek? Válaszd ki a helyes választ: 32, 37, 42",
+        "answer": "32",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10038,
+        "question": "Mi a nyomó kötés lényege? ",
+        "answer": "Elszorítjuk vele az erős vérzést.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10039,
+        "question": "Hány liter vér kering az emberi szervezetben? Válaszd ki a helyes választ! 3, 5, 7 liter",
+        "answer": "5",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10040,
+        "question": "A nyílt törés jellemző tünete. Válaszd ki a helyes válaszokat! Kilátszik a törött csontvég, duzzadt, fájdalmas, a test egyik fele lebénul",
+        "answer": "Kilátszik a törött csontvég, duzzadt, fájdalmas",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10041,
+        "question": "Milyen diagnosztikai módszerek ismertek? Sorolj fel 3 darabot!",
+        "answer": "Ultrahang, Röntgen, EKG, CT, PET, MRI, MRA, LP, Biopsia, Genetika",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10042,
+        "question": "Mi az EKG? Elektromiográfia, Elektrokardiográfia, Elektroencephalográfia, vagy elektromos központ gravitációval.",
+        "answer": "Elektrokardiográfia",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "elsosegely_cs_5",
+    "displayName": "Segíts, ha tudsz 5!",
+    "questions": [
+      {
+        "id": 10043,
+        "question": "Az asztma egy allergia típus. A. igen B. nem",
+        "answer": "A. igen",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10044,
+        "question": "Baleset során a hátsérültet meg szabad mozdítani? A. Igen. B. Nem",
+        "answer": "B. Nem",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10045,
+        "question": "Az elsősegély nyújtás fogalma.",
+        "answer": "Egészségügyi beavatkozás, amit bárki elvégezhet.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10046,
+        "question": "Mik a véralkotó elemei?",
+        "answer": "Vörösvérsejt, fehérvérsejt, vérlemezkék vagy trombociták.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10047,
+        "question": "Kinek kell szólni, ha baleset történt? Válaszd ki a HELYTELEN VÁLASZT! Mentők, katasztrófavédelem, tűzoltók, rendőrség, szomszéd néni",
+        "answer": "katasztrófavédelem, szomszéd néni",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10048,
+        "question": "Mit jelent a triázs meghatározása elsősegély nyújtáskor? A. Osztályozást jelent,  B. egy fajta orvosságot jelent, C. ez egy fogás, amellyel megmenthetem a sérültet",
+        "answer": "A. Osztályozást jelent",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "elsosegely_cs_6",
+    "displayName": "Segíts, ha tudsz 6!",
+    "questions": [
+      {
+        "id": 10049,
+        "question": "Mire használjuk a jódot? A. Teába csöpögtetjük otthon, B.Sebek fertőtlenítésére",
+        "answer": "B.Sebek fertőtlenítésére",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10050,
+        "question": "Miért fontos a környezetet biztosítani elsősegély nyújtáskor?",
+        "answer": "Azért hogy ne sodord saját magad veszélybe",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10051,
+        "question": "Mivel fertőtlenítjük a sebet, ha a barátunk elesett kerékpárral és leverte a térdéről a bőrt?",
+        "answer": "Hidrogén-peroxiddal vagy jóddal",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10052,
+        "question": "A zárt törés jellemző tünete. Válaszd ki a kakukktojást: Fájdalom, duzzanat, hiányzik a sérült egyik szemgolyója, mozgatási nehézség, látható deformitás.",
+        "answer": "hiányzik a sérült egyik szemgolyója",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10053,
+        "question": "Mi a teendő, ha takarítás során sósav fröccsen a szembe?",
+        "answer": "Üljön le a beteg, fejét hajtsa hátra, szemeit mossa meg, itassa be egy textíliával, mind két szemét takarja le",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10054,
+        "question": "Minek a rövidítése a BLS? A. Beteg aki liftben sérült, B. Basic Life support, C. BaLesEt",
+        "answer": "B. Basic Life support",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "elsosegely_cs_7",
+    "displayName": "Segíts, ha tudsz 7!",
+    "questions": [
+      {
+        "id": 10055,
+        "question": "Hol mérik leggyakrabban a lázat? Hónaljban vagy szájban",
+        "answer": "Hónaljban",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10056,
+        "question": "Miért veszélyes az ütőeres vérzés?",
+        "answer": "Elvérezhet, és meghalhat a beteg",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10057,
+        "question": "Milyen gyulladások léteznek? A. Akut és krónikus, B. Kicsi és nagy",
+        "answer": "A. Akut és krónikus",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10058,
+        "question": "Miből áll az újraélesztés?",
+        "answer": "Be fúvásból és szívmasszázsból",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10059,
+        "question": "Nevezd meg 2 fájdalomcsillapító gyógyszer nevét.",
+        "answer": "Cafetin, brufen",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10060,
+        "question": "Hogyan látunk el egy orrvérzést otthon?",
+        "answer": "Leültetjük a beteget, fejét hátra hajtjuk, orr nyílásához gézt helyezünk, orrszárnyait összenyomjuk, borogatás a tarkóra, 10 percig fenn tartjuk ezt a helyzetet",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "rajzfilmek_kcscs_1",
+    "displayName": "Hol volt, hol nem volt!",
+    "questions": [
+      {
+        "id": 10061,
+        "question": "Ki él a Bikini-fenéken?",
+        "answer": "Spongyabob Kockanadrág",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10062,
+        "question": "Milyen gyümölccsel akarta mostohája megmérgezni Hófehérkét?",
+        "answer": "Almával",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10063,
+        "question": "Milyen állat Frakk?",
+        "answer": "Kutya",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10064,
+        "question": "Milyen származású Asterix?",
+        "answer": "Gall",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10065,
+        "question": "Mi Gombóc Artúr kedvenc eledele?",
+        "answer": "A csokoládé",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10066,
+        "question": "Melyik rajzfilmből származik az idézet :  \"Hacsak valaki nem tesz az ügyért, komám, akkor semmi sem fog megjavulni. De nem ám!\"",
+        "answer": "Dr.Seuss: A Lorax (persze a Dr.Seuss nem muszáj mondaniuk)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "rajzfilmek_kcscs_2",
+    "displayName": "Túl az operencián!",
+    "questions": [
+      {
+        "id": 10067,
+        "question": "Ki a vízipók legjobb barátja?",
+        "answer": "Keresztespók",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10068,
+        "question": "Ki Mézgáék szomszédja?",
+        "answer": "Máris szomszéd",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10069,
+        "question": "Mi volt Dr.Bubó asszisztens nője?",
+        "answer": "Medve",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10070,
+        "question": "Hogy hívja Vuk a kacsát a rajzfilmben?",
+        "answer": "Tás",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10071,
+        "question": "Mit gyűjtenek a Szörny Rt. \"dolgozói\" a gyerekektől?",
+        "answer": "Sikolyt",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10072,
+        "question": "Mi a pontos lakcíme Nemo \"raboskodási\" helyének? (amely a búvár szemüvegjére volt írva)",
+        "answer": "P Sherman, 42., Wallaby Way, Sydney",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "rajzfilmek_kcscs_3",
+    "displayName": "Hol volt, hol nem volt! (Extra)",
+    "questions": [
+      {
+        "id": 10073,
+        "question": "Milyen fajba tartozik Shrek?",
+        "answer": "ogre",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10074,
+        "question": "Nevezd meg  a Tini Ninja Teknőcöket!",
+        "answer": "Leonardo, Michelangelo, Donatello, Raphaello",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10075,
+        "question": "Hogy hívják Frédi feleségét?",
+        "answer": "Vilma",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10076,
+        "question": "Milyen mozdony Thomas?",
+        "answer": "gőz mozdony",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10077,
+        "question": "Mit jelent a \"Hakunamatata\"?",
+        "answer": "azt jelenti : semmi gond",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10078,
+        "question": "Milyen típusú rajzfilm a Vándorló Palota?",
+        "answer": "anime",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "torvenyek_cs_1",
+    "displayName": "Így élünk mi!",
+    "questions": [
+      {
+        "id": 10079,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "9. számú cserkész törvény: A cserkész takarékos!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_1.jpg"
+      },
+      {
+        "id": 10080,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "10 számú, A cserkész testben és lélekben tiszta!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_2.jpg"
+      },
+      {
+        "id": 10081,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "6. számú, A cserkész szereti a természetet, kíméli a növényeket, jó az állatokhoz!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_3.jpg"
+      },
+      {
+        "id": 10082,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "4. számú , A cserkész minden cserkészt testvérének tekint!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_4.jpg"
+      },
+      {
+        "id": 10083,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "8. számú, A cserkész vidám és meggoldolt!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_5.jpg"
+      },
+      {
+        "id": 10084,
+        "question": "A kép alapján válaszold meg  hányas számú  cserkész törvényről van szó!",
+        "answer": "1. számú, A cserkész egyenes lelkű és feltétlenül igazat mond!",
+        "comment": "",
+        "sound": null,
+        "image": "images/torvenyek/torveny_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "rovas_iras_cs_1",
+    "displayName": "Égi ABC",
+    "questions": [
+      {
+        "id": 10085,
+        "question": "Melyik betű látható a képen?",
+        "answer": "A",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_1.jpg"
+      },
+      {
+        "id": 10086,
+        "question": "Melyik betűről van szó?",
+        "answer": "SZ",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_2.jpg"
+      },
+      {
+        "id": 10087,
+        "question": "Melyik betűről van szó?",
+        "answer": "Í",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_3.jpg"
+      },
+      {
+        "id": 10088,
+        "question": "Melyik szó olvasható?",
+        "answer": "Bab",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_4.jpg"
+      },
+      {
+        "id": 10089,
+        "question": "Egyezik e a kép és az aláírt szöveg?",
+        "answer": "Nem (csiga)",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_5.jpg"
+      },
+      {
+        "id": 10090,
+        "question": "Olvasd el! Mit ír itt?",
+        "answer": "Cserkész",
+        "comment": "",
+        "sound": null,
+        "image": "images/rovas_iras/rovas_iras_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "csillagaszat_kcs_1",
+    "displayName": "Űrutazás",
+    "questions": [
+      {
+        "id": 10091,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Nap",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_1.jpg"
+      },
+      {
+        "id": 10092,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Hold",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_2.jpg"
+      },
+      {
+        "id": 10093,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Szaturnusz",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_3.jpg"
+      },
+      {
+        "id": 10094,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Mars",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_4.jpg"
+      },
+      {
+        "id": 10095,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Uránusz",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_5.jpg"
+      },
+      {
+        "id": 10096,
+        "question": "Nevezd meg a bolygót!",
+        "answer": "Jupiter",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagaszat/kcs/csillagaszat_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "csillagaszat_cs_1",
+    "displayName": "Űrutazás",
+    "questions": [
+      {
+        "id": 10097,
+        "question": "Tudna-e úszni a Jupiter a tengerben vagy alámerülne?",
+        "answer": "Tudna",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10098,
+        "question": "Hány bolygóból áll a Naprendszer?",
+        "answer": "8",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10099,
+        "question": "A Naprendszer bolygói közül melyik bolygónak van a legnagyobb térfogata?",
+        "answer": "Jupiter",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10100,
+        "question": "A Naprendszer bolygói közül melyik bolygónak van megdőlve a forgastengelye 90 fokkal?",
+        "answer": "Uránusz",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10101,
+        "question": "2006-ban a Naprendszer utolsó, legkisebb bolygójától megvonták a bolygó megnevezést, mely égi testről van szó?",
+        "answer": "Plútó",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10102,
+        "question": "A Naprendszer bolygói közül melyik bolygó forog ellentétes iranyban a saját tengelye körül a többi bolygóhoz képest?",
+        "answer": "Vénusz",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "csillagkepek_cs_1",
+    "displayName": "Segíts, ha tudsz 2!",
+    "questions": [
+      {
+        "id": 10103,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Nagygöncöl",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_1.gif"
+      },
+      {
+        "id": 10104,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Kisgöncöl",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_2.jpg"
+      },
+      {
+        "id": 10105,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Orion",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_3.jpg"
+      },
+      {
+        "id": 10106,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Sárkány",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_4.jpg"
+      },
+      {
+        "id": 10107,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Hattyú",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_5.jpg"
+      },
+      {
+        "id": 10108,
+        "question": "Nevezd meg a csillagképet!",
+        "answer": "Nyúl",
+        "comment": "",
+        "sound": null,
+        "image": "images/csillagkepek/cs/csillagkepek_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "epiteszet_kcs_1",
+    "displayName": "Tégláról téglára",
+    "questions": [
+      {
+        "id": 10109,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Eiffel-torony",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_10.jpg"
+      },
+      {
+        "id": 10110,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Diadalív, Párizs",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_20.jpg"
+      },
+      {
+        "id": 10111,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Egyiptomi piramisok",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_30.jpg"
+      },
+      {
+        "id": 10112,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Szabadkai Városháza",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_40.jpg"
+      },
+      {
+        "id": 10113,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Szabadkai Zsinagóga",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_50.jpg"
+      },
+      {
+        "id": 10114,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Parlament, Magyarország",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/kcs/epiteszet_1_60.jpg"
+      }
+    ]
+  },
+  {
+    "id": "epiteszet_cs_1",
+    "displayName": "Tégláról téglára",
+    "questions": [
+      {
+        "id": 10115,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Római kolosszeum",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_10.jpg"
+      },
+      {
+        "id": 10116,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Stonehenge, Anglia",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_20.jpg"
+      },
+      {
+        "id": 10117,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Kínai nagy fal",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_30.jpg"
+      },
+      {
+        "id": 10118,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Tádzs Mahal",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_40.jpg"
+      },
+      {
+        "id": 10119,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Aya Szophia",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_50.jpg"
+      },
+      {
+        "id": 10120,
+        "question": "Nevezd meg az építményt!",
+        "answer": "Sagrada Familia, Barcelona",
+        "comment": "",
+        "sound": null,
+        "image": "images/epiteszet/cs/epiteszet_1_60.jpg"
+      }
+    ]
+  },
+  {
+    "id": "fizika_kcs_1",
+    "displayName": "Heuréka!",
+    "questions": [
+      {
+        "id": 10121,
+        "question": "Ki ő?",
+        "answer": "Newton",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_1.jpg"
+      },
+      {
+        "id": 10122,
+        "question": "Ki ő?",
+        "answer": "Galileo Galilei",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_2.jpg"
+      },
+      {
+        "id": 10123,
+        "question": "Ki ő?",
+        "answer": "Archimedes",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_3.jpg"
+      },
+      {
+        "id": 10124,
+        "question": "Ki ő?",
+        "answer": "Einstein",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_4.jpg"
+      },
+      {
+        "id": 10125,
+        "question": "Ki ő?",
+        "answer": "Nikola Tesla",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_5.jpg"
+      },
+      {
+        "id": 10126,
+        "question": "Ki ő?",
+        "answer": "Teller Ede",
+        "comment": "",
+        "sound": null,
+        "image": "images/fizika/kcs/fizika_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "fizika_cs_1",
+    "displayName": "Heuréka!",
+    "questions": [
+      {
+        "id": 10127,
+        "question": "Mi a hőmérséklet mértékegysége az SI mértékrendszerben?",
+        "answer": "Kelvin (K)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10128,
+        "question": "A mega M szorzószócska jelentése?",
+        "answer": "1.000.000, (1millió)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10129,
+        "question": "Egyenletes mozgás esetén mely fizikai mennyiség nem változik?",
+        "answer": "sebesség",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10130,
+        "question": "Nevezd meg azt az erőt amely segitségével le tudunk fékezni az autóval.",
+        "answer": "Súrlódási erő",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10131,
+        "question": "Ha egy álló csónakban elkezdünk előrefelé sétáli merre fog elmozdulni a csónak?",
+        "answer": "hátrafelé",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10132,
+        "question": "Mely fizikai mennyiség irható le igy: erő szorozva kar?",
+        "answer": "forgatónyomaték",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "foldrajz_kcs_1",
+    "displayName": "Nagy utazás!!",
+    "questions": [
+      {
+        "id": 10133,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Magyarország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_1.jpg"
+      },
+      {
+        "id": 10134,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Olaszország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_2.jpg"
+      },
+      {
+        "id": 10135,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Nagy Britannia",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_3.jpg"
+      },
+      {
+        "id": 10136,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Horvátország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_4.jpg"
+      },
+      {
+        "id": 10137,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Ausztrália",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_5.jpg"
+      },
+      {
+        "id": 10138,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Németország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/kcs/foldrajz_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "foldrajz_cs_1",
+    "displayName": "Nagy utazás!",
+    "questions": [
+      {
+        "id": 10139,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "USA",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_1.jpg"
+      },
+      {
+        "id": 10140,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Ausztria",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_2.jpg"
+      },
+      {
+        "id": 10141,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Oroszország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_3.jpg"
+      },
+      {
+        "id": 10142,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Ciprus",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_4.jpg"
+      },
+      {
+        "id": 10143,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Izland",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_5.jpg"
+      },
+      {
+        "id": 10144,
+        "question": "Melyik ország térképe látható a képen?",
+        "answer": "Finnország",
+        "comment": "",
+        "sound": null,
+        "image": "images/foldrajz/cs/foldrajz_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "matek1_kcs_1",
+    "displayName": "Kérem a következőt!",
+    "questions": [
+      {
+        "id": 10145,
+        "question": "Folytasd a számsort: 2, 4, 6, 8, ",
+        "answer": "10 -> n*2",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10146,
+        "question": "Folytasd a számsort: 142, 253, 364, 475, ",
+        "answer": "586 -> n+111",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10147,
+        "question": "Folytasd a számsort: 30, 75, 120, 165, ",
+        "answer": "210 -> n+45",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10148,
+        "question": "Folytasd a számsort: 4, 5, 9, 14, ",
+        "answer": "23 -> n-1 + n",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10149,
+        "question": "Folytasd a számsort: 1, 4; 2, 8; 3, ",
+        "answer": "12 -> n*4",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10150,
+        "question": "Folytasd a számsort: 123, 6; 286, 16; 307, ",
+        "answer": "10 -> n-1 + n + n+1",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "matek1_cs_1",
+    "displayName": "Kérem a következőt!",
+    "questions": [
+      {
+        "id": 10151,
+        "question": "Folytasd a számsort: 1, 4, 9, 16,  ",
+        "answer": "25 -> n^2",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10152,
+        "question": "Folytasd a számsort: 1, 3, 5, 7, ",
+        "answer": "11 -> prim",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10153,
+        "question": "Folytasd a számsort: 1, 1, 2, 3, 5, ",
+        "answer": "8 -> n-1 + n",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10154,
+        "question": "Folytasd a számsort: 64, 2, 62, 4, ",
+        "answer": "58 -> n-1 – n",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10155,
+        "question": "Folytasd a számsort: 163, 4, 167, 8, 175, ",
+        "answer": "6 -> 1+3 = 4+163 = 167, 1+7 = 8+167 = 175",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10156,
+        "question": "Folytasd a számsort: 4, 3, 9, 4, 16, ",
+        "answer": "5 -> 4^0.5 = 2+1 = 3^2 = 9, 9^0.5 = 3+1 = 4^2 = 16, 16^0.5 = 4+1 = 5",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "matek2_kcs_1",
+    "displayName": "Hanyadik?/Hányan?",
+    "questions": [
+      {
+        "id": 10157,
+        "question": "Ha 4 ember 4 órát sakkozott, mennyi időt sakkozot akkor 1 ember?",
+        "answer": "4 órát",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10158,
+        "question": "Ha minden botnak két vége van, akkor hány vége van egy és fél botnak?",
+        "answer": "4",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10159,
+        "question": "Ha a vonat 10 vagont húzott 100km-en, akkor egy vagon hány kilométert ment?",
+        "answer": "100km-t",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10160,
+        "question": "Egy lécet 6 egyforma részre kell szétvágni. Hány helyen kell a lécet ehhez elfűrészelni?",
+        "answer": "5 helyen",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10161,
+        "question": "40 oszlopból keritést készitünk, úgy hogy köztük 1m távolság van. Milyen hosszú az így kapott kerités?",
+        "answer": "59m",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10162,
+        "question": "A telefonoszlopok közötti távolság 5m. Mennyi telefonoszlopot kell elhelyezni 500m-en?",
+        "answer": "101 darabot",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "matek2_cs_1",
+    "displayName": "Hanyadik?/Hányan?",
+    "questions": [
+      {
+        "id": 10163,
+        "question": "Ha 3 ember 3 órát várt a buszra, akkor egy ember hány órát várt a buszra?",
+        "answer": "3 órát",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10164,
+        "question": "A családban van 3 lánytestvér, minden lánytestvérnek van egy fiútestvére. Hány gyerek van a családban?",
+        "answer": "4",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10165,
+        "question": "A kakas ha egylábra állt 2,5kg-ot nyomott, mennyit nyom ha  kétlábra áll?",
+        "answer": "2,5kg-ot",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10166,
+        "question": "A szoba minden sarkában ül egy macska, minden macska 5 macskát lát. Hány sarka van a szobának?",
+        "answer": "6",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10167,
+        "question": "Jancsinak és Juliskának ugyanannyi almája van. Hány almával van több Juliskának, ha Jancsitól kap 4-et?",
+        "answer": "8 almával",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10168,
+        "question": "Ha ma éjfélkor esik az eső, akkor 72 óra múlva várható-e fényes napsütés?",
+        "answer": "Nem, mert éjszaka 12 lesz akkor is.",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "mitortentekkor_kcs_1",
+    "displayName": "Mi történt ekkor?",
+    "questions": [
+      {
+        "id": 10169,
+        "question": "Mikor járt Kolombusz Kristóf Amerikában?",
+        "answer": "1492",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10170,
+        "question": "Mikor koronázták meg az első magyar királyt?",
+        "answer": "1000",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10171,
+        "question": "Mikor volt a honfoglalás?",
+        "answer": "896",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10172,
+        "question": "Mikor tört ki a magyar forradalom az osztrák elnyomás ellen?",
+        "answer": "1848",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10173,
+        "question": "Mikor volt a Tatárjárás?",
+        "answer": "1241",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10174,
+        "question": "Mikor halt ki az Árpád házi család?",
+        "answer": "1301",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "mitortentekkor_cs_1",
+    "displayName": "Mi történt ekkor?",
+    "questions": [
+      {
+        "id": 10175,
+        "question": "Mikor volt a nándorfehérvári ütközet? ",
+        "answer": "1456",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10176,
+        "question": "Mikor volt az első keresztes hadjárat?",
+        "answer": "1096",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10177,
+        "question": "Mikor tört ki az első világháború?",
+        "answer": "1914",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10178,
+        "question": "Mikor írták alá a trianoni békeszerződést?",
+        "answer": "1920",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10179,
+        "question": "Mikor volt a magyar szabadságharc a szovjet elnyomás ellen?",
+        "answer": "1956",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10180,
+        "question": "Mikor volt a francia forradalom?",
+        "answer": "1789",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "cserkesztortenelem_kcs_1",
+    "displayName": "Jó munkát! Légy résen!",
+    "questions": [
+      {
+        "id": 10181,
+        "question": "Ki alapította meg a cserkészetet?",
+        "answer": "Robert Baden Powell (Bi-Pi)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10182,
+        "question": "A VMCSSZ milyen jubileumát ünnepli 2014-ben?",
+        "answer": "25 éves a Szövetség",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10183,
+        "question": "Mikor volt a Gödöllői Jamboree?",
+        "answer": "1933",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10184,
+        "question": "Mikor alakult meg a cserkész mozgalom?",
+        "answer": "1907",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10185,
+        "question": "Mit jelképez a liliom?",
+        "answer": "tisztaság jelképe, szélrózsa, iránytű északi része",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10186,
+        "question": "Hol alapult meg az első magyar cserkészcsapat?",
+        "answer": "Nagybecskerek",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "cserkesztortenelem_cs_1",
+    "displayName": "Jó munkát! Légy résen!",
+    "questions": [
+      {
+        "id": 10187,
+        "question": "Ki volt az egyetlen magyar főcserkész, aki miniszterelnöki posztot töltött be?",
+        "answer": "Teleki Pál",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10188,
+        "question": "Hol halt meg Bi Pi?",
+        "answer": "Kenya",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10189,
+        "question": "Hol volt az egyetlen magyar Jamboree?",
+        "answer": "Gödöllő",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10190,
+        "question": "Bi-Pi kikkel harcolt Dél-Afrikában?",
+        "answer": "burok",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10191,
+        "question": "Ki volt az a tanár, aki Nagybecskerek megalapította az első magyar cserkészcsapatot?",
+        "answer": "Králik László",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10192,
+        "question": "Ki volt az a magyar cserkész, aki költő, piarista pap-tanár, a magyar cserkészet pedagógiájának megalapítója volt?",
+        "answer": "Sík Sándor",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "holjarok_kcs_1",
+    "displayName": "Hol járok?",
+    "questions": [
+      {
+        "id": 10193,
+        "question": "Hol járunk?",
+        "answer": "Szabadkai városháza",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_1.jpg"
+      },
+      {
+        "id": 10194,
+        "question": "Hol járunk?",
+        "answer": "Pétervárad",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_2.jpg"
+      },
+      {
+        "id": 10195,
+        "question": "Hol járunk?",
+        "answer": "Csantavéri templom",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_3.jpg"
+      },
+      {
+        "id": 10196,
+        "question": "Hol járunk?",
+        "answer": "Újvidék központja",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_4.jpg"
+      },
+      {
+        "id": 10197,
+        "question": "Hol járunk?",
+        "answer": "Szabadkai zsinagóga",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_5.jpg"
+      },
+      {
+        "id": 10198,
+        "question": "Hol járunk?",
+        "answer": "Bács vára",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/kcs/holjarok_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "holjarok_cs_1",
+    "displayName": "Hol járok?",
+    "questions": [
+      {
+        "id": 10199,
+        "question": "Hol járunk?",
+        "answer": "Péterváradi napóra",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_1.jpg"
+      },
+      {
+        "id": 10200,
+        "question": "Hol járunk?",
+        "answer": "Aracs",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_2.jpg"
+      },
+      {
+        "id": 10201,
+        "question": "Hol járunk?",
+        "answer": "Galambóc",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_3.jpg"
+      },
+      {
+        "id": 10202,
+        "question": "Hol járunk?",
+        "answer": "Raichel palota Szabadka",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_4.jpg"
+      },
+      {
+        "id": 10203,
+        "question": "Hol járunk?",
+        "answer": "Nagybecskerek központja",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_5.jpg"
+      },
+      {
+        "id": 10204,
+        "question": "Hol járunk?",
+        "answer": "Zombori napóra",
+        "comment": "",
+        "sound": null,
+        "image": "images/holjarunk/cs/holjarok_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "tortenelem_cs_1",
+    "displayName": "Ki mondta ezt...?",
+    "questions": [
+      {
+        "id": 10205,
+        "question": "A kocka el van vetve",
+        "answer": "Julius Cezar",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10206,
+        "question": "Kis lépés egy embernek, de hatalmas ugrás az emberiségnek",
+        "answer": "Neil Amstrong",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10207,
+        "question": "Jöttem, láttam, győztem",
+        "answer": "Julius Cezar",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10208,
+        "question": "És mégis mozog a Föld",
+        "answer": "Galileo Galilei",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10209,
+        "question": "Ne zavard köreimet!",
+        "answer": "Arkhimédész",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10210,
+        "question": "Egy ember halála tragédia. Millióké statisztika",
+        "answer": "Sztálin",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "romaiszamok_kcs_1",
+    "displayName": "VINI VIDI VICI",
+    "questions": [
+      {
+        "id": 10211,
+        "question": "Kik használták a római számokat?",
+        "answer": "rómaiak",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10212,
+        "question": "Fejtsd meg a következő szám kombinációt: CI",
+        "answer": "101",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10213,
+        "question": "Mely római számokat kell felhaszanálni a következő arab számokhoz: 99",
+        "answer": "IC",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10214,
+        "question": "Mely ma használt számot nem alkalmazták a rómaiak?",
+        "answer": "0 (nulla)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10215,
+        "question": "A ma ismert, illetve ma használt számokat kiktől vettük át?",
+        "answer": "arab",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10216,
+        "question": "Fejtsd meg a következő szám kombinációt:  MMXIV",
+        "answer": "2014",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "romaiszamok_cs_1",
+    "displayName": "VINI VIDI VICI",
+    "questions": [
+      {
+        "id": 10217,
+        "question": "Mely ma használt számot nem alkalmazták a rómaiak?",
+        "answer": "0 (nulla)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10218,
+        "question": "A ma ismert, illetve ma használt számokat kiktől vettük át?",
+        "answer": "arab",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10219,
+        "question": "Fejtsd meg a következő szám kombinációt:  DCLXVI",
+        "answer": "666",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10220,
+        "question": "Mely római számokat kell felszanálni a következő arab számokhoz: 1453",
+        "answer": "MCDLIII",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10221,
+        "question": "Írd le római számokkal a mohácsi vész dátumát!",
+        "answer": "1526, vagyis MDXXVI",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10222,
+        "question": "Hogy mondják latinul az ezret?",
+        "answer": "MILIA",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "kepcsarnok_kcs_1",
+    "displayName": "Ki ő?",
+    "questions": [
+      {
+        "id": 10223,
+        "question": "Ki ő?",
+        "answer": "Mátyás király",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_1.jpg"
+      },
+      {
+        "id": 10224,
+        "question": "Ki ő?",
+        "answer": "Petőfi Sándor",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_2.jpg"
+      },
+      {
+        "id": 10225,
+        "question": "Ki ő?",
+        "answer": "Dózsa György",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_3.jpg"
+      },
+      {
+        "id": 10226,
+        "question": "Ki ő?",
+        "answer": "Attila",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_4.jpg"
+      },
+      {
+        "id": 10227,
+        "question": "Ki ő?",
+        "answer": "Büszke Botond ",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_5.jpg"
+      },
+      {
+        "id": 10228,
+        "question": "Ki ő?",
+        "answer": "Toldi",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/kcs/kepcsarnok_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "kepcsarnok_cs_1",
+    "displayName": "Ki ő?",
+    "questions": [
+      {
+        "id": 10229,
+        "question": "Ki ő?",
+        "answer": "Hunyadi János",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_1.jpg"
+      },
+      {
+        "id": 10230,
+        "question": "Ki ő?",
+        "answer": "Kossuth Lajos",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_2.jpg"
+      },
+      {
+        "id": 10231,
+        "question": "Ki ő?",
+        "answer": "Rákóczi Ferenc II.",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_3.jpg"
+      },
+      {
+        "id": 10232,
+        "question": "Ki ő?",
+        "answer": "Szent István",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_4.jpg"
+      },
+      {
+        "id": 10233,
+        "question": "Ki ő?",
+        "answer": "Gábor Áron",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_5.jpg"
+      },
+      {
+        "id": 10234,
+        "question": "Ki ő?",
+        "answer": "Horthy Miklós",
+        "comment": "",
+        "sound": null,
+        "image": "images/kepcsarnok/cs/kepcsarnok_1_6.jpg"
+      }
+    ]
+  },
+  {
+    "id": "nepdalok_cs_1",
+    "displayName": "3-at mond a pacsirta",
+    "questions": [
+      {
+        "id": 10235,
+        "question": "Nevezd meg a népdalt: \"Zimmer-zumm, bum bum, recefice\"",
+        "answer": "Virágéknál",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10236,
+        "question": "Nevezd meg a népdalt: \"Utcában, Seje-haj, Tiszán\"",
+        "answer": "Által mennék én a ...",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10237,
+        "question": "Nevezd meg a népdalt: \"Babám, Elaluszik,Tüzet\"",
+        "answer": "Megrakják a tüzet",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10238,
+        "question": "Nevezd meg a népdalt: \"Hegyek, Ölelsz, kisangyalom\"",
+        "answer": "Csitári hegyek alatt",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10239,
+        "question": "Nevezd meg a népdalt: \"Szerelmes, Válogatják, Sütik\"",
+        "answer": "Boncidai piacon...",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10240,
+        "question": "Nevezd meg a népdalt: \"Szerencsétlen, Kevert, Kalapom\"",
+        "answer": "Elmúltak a mézes hetek",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "nepdalok_cs_2",
+    "displayName": "Folytasd ...",
+    "questions": [
+      {
+        "id": 10241,
+        "question": "Ő ad erőt ...",
+        "answer": "... a nagy harcra (Daltól hangos)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10242,
+        "question": "Ott szemben szívben ...",
+        "answer": "... tiszta láng (Cserkész induló)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10243,
+        "question": "Télen nyáron ballagunk ...",
+        "answer": "... még is vidámak vagyunk (Ici-pici csapatunk)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10244,
+        "question": "... a víg zene had táncoljak ...",
+        "answer": "... néked, véled (Télen nyáron)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10245,
+        "question": "A szent szabadság ...",
+        "answer": "... oltalmára (Fel-fel vitézek)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10246,
+        "question": "A lipidári labdom , máté tuli ...",
+        "answer": "... matulári pipi tuli (Kis kertet kerítettem)",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "nepdalok_cs_3",
+    "displayName": "Gyerekdalok",
+    "questions": [
+      {
+        "id": 10247,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "Elvesztettem zsebkendőmet",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_1.avi",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10248,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "Hulla a szilva a fáról",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_2.avi",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10249,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "Búj búj zöld ág",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_3.avi",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10250,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "Erdő erdő erdő marosszéki kerek erdő...",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_4.avi",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10251,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "A part alatt...",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_5.avi",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10252,
+        "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
+        "answer": "Tavaszi szél...",
+        "comment": "",
+        "video": "videos/nepdalok/cs/nepdalok_1_6.avi",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "nepdalok_cs_4",
+    "displayName": "Kis pacsirta",
+    "questions": [
+      {
+        "id": 10253,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Himnusz",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_1.mp3",
+        "image": null
+      },
+      {
+        "id": 10254,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Túl a vizen egy kosár",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_2.mp3",
+        "image": null
+      },
+      {
+        "id": 10255,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Tavaszi szel",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_3.mp3",
+        "image": null
+      },
+      {
+        "id": 10256,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Százados úr sej haj",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_4.mp3",
+        "image": null
+      },
+      {
+        "id": 10257,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Erdő erdő erdő...",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_5.mp3",
+        "image": null
+      },
+      {
+        "id": 10258,
+        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "answer": "Szélről legeljetek...",
+        "comment": "",
+        "sound": "sounds/nepdalok/cs/nepdalok_1_6.mp3",
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "nepdalok_cs_2",
+    "displayName": "Hol járok?",
+    "questions": [
+      {
+        "id": 10259,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Nyisd ki anyám az ablakodat, csókold meg a cserkész lányodat .",
+        "answer": "Daltól hangos",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10260,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Hogy ha megszomjazik hátzsákját kibontja.",
+        "answer": "Fel fel cserkész pajtás",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10261,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Szeretőjük mindig más az uruk csak ráadás.",
+        "answer": "Boncidai piacon",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10262,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Szedd össze a sátorfádat látogasd meg az anyádat.",
+        "answer": "Elmúltak a mézes hetek...",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10263,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Vasárnap az ünnepi ebédre-bédre, farkát rágtuk egy özvegy tehénnek-hénnek.",
+        "answer": "Ettünk fa lombot",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 10264,
+        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Csillagos ég, merre van a magyar hazám,merre sirat engem az édesanyám?",
+        "answer": "Kimegyek a doberdói harctérre...",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": "zaszlok_cs_1",
+    "displayName": "Országos jelvények",
+    "questions": [
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Magyarország",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_1.svg"
+      },
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Egyesült Királyság",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_2.svg"
+      },
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Japán",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_3.svg"
+      },
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Izrael",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_4.svg"
+      },
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Brazilia",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_5.svg"
+      },
+      {
+        "id": 10259,
+        "question": "Melyik ország zászlaját látod a képen?",
+        "answer": "Ausztrália",
+        "comment": "",
+        "sound": null,
+        "image": "images/zaszlok/cs/zaszlok_1_6.svg"
+      }
+    ]
+  }
+]
