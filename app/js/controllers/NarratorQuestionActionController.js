@@ -5,15 +5,6 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
   $scope.value = data.value;
   $scope.teams = data.teams;
 
-  $scope.correctAnswer = function (team) {
-    team.point = parseInt(team.point) + parseInt($scope.value);
-    $scope.question.answered = true;
-  };
-
-  $scope.incorrectAnswer = function (team) {
-    // $modalInstance.close();
-  };
-
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
@@ -26,9 +17,7 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
   };
 
   $scope.hideQuestion = function () {
-    socketInstance.emit('hideQuestion', {
-
-    });
+    socketInstance.emit('hideQuestion');
   };
 
   $scope.showAnswer = function () {
@@ -41,6 +30,26 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
 
   $scope.startTimer = function () {
 
+  };
+
+  $scope.startTimer = function () {
+
+  };
+
+  $scope.emitQuestionState = function (state) {
+    socketInstance.emit('questionUpdated', {
+      categoryId: $scope.category.id,
+      questionId: $scope.question.id,
+      state: state
+    });
+  };
+
+  $scope.emitTeamPointChange = function (team, positive) {
+    team.point = parseInt(team.point) + parseInt($scope.value) * (positive ? 1 : -1);
+    socketInstance.emit('teamChanged', {
+        id: team.id,
+        point: team.point
+    });
   };
 
 };

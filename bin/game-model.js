@@ -72,6 +72,47 @@ GameModel.prototype.continueSnapshot = function (snapshotId, callback) {
 
 };
 
+GameModel.prototype.questionUpdated = function (categoryId, questionId, state) {
+
+    var question = this.getQuestion(categoryId, questionId);
+
+    if (question && question.answered !== state) {
+        question.answered = state;
+
+        return true;
+    }
+
+    return false;
+
+};
+
+GameModel.prototype.getCategory = function (categoryId) {
+
+    for (var i = 0; i < this.categories.length; i++) {
+        if (this.categories[i].id === categoryId) {
+            return this.categories[i];
+        }
+    }
+
+    return null;
+};
+
+GameModel.prototype.getQuestion = function (categoryId, questionId) {
+    var category = this.getCategory(categoryId);
+
+    if (category) {
+        for (var i = 0; i < category.questions.length; i++) {
+            if (category.questions[i].id === questionId) {
+                return category.questions[i];
+            }
+        }
+    } else {
+        console.error('getQuestion: Category Id invalid');
+    }
+
+    return null;
+};
+
 
 GameModel.prototype.restoreGame = function (snapshot) {
     // TODO check, if game already initialized, then this should exit

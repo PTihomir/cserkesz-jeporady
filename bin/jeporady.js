@@ -154,6 +154,13 @@ JeporadyServer.prototype.initNarratorSocket = function() {
 
         socket.on('questionUpdated', function (data) {
 
+            var changed = _this.game.questionUpdated(data.categoryId, data.questionId, data.state);
+
+            if (changed) {
+                _this.saveSnapshot();
+                _this.emitGameUpdated();
+            }
+
         });
 
         socket.on('showQuestion', function (data) {
@@ -165,6 +172,17 @@ JeporadyServer.prototype.initNarratorSocket = function() {
             if (_this.display)
                 _this.display.emit('hideQuestion');
         });
+
+        socket.on('showAnswer', function (data) {
+            if (_this.display)
+                _this.display.emit('showAnswer', data);
+        });
+
+        socket.on('hideAnswer', function () {
+            if (_this.display)
+                _this.display.emit('hideAnswer');
+        });
+
 
 
     });
@@ -194,7 +212,6 @@ JeporadyServer.prototype.initDisplaySocket = function() {
     });
 
 };
-
 
 JeporadyServer.prototype.emitGameUpdated = function() {
 

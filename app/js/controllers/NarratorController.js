@@ -86,7 +86,7 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $locat
         });
 
         modalInstance.result.then(function (team) {
-            socketInstance.emit('changeTeam', {
+            socketInstance.emit('teamChanged', {
                 id: team.id,
                 name: team.name,
                 point: team.point

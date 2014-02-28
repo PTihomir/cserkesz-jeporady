@@ -6,9 +6,8 @@
                 </div>
             </li>
             <li class="question text-center" ng-repeat="question in category.questions" ng-click="openQuestionDetail(question, category, ($index + 1) * 100)">
-                <div>
-                    <span class="not-answered" ng-if="!question.answered">{{($index + 1) * 100}}</span>
-                    <span class="answered" ng-if="question.answered">{{($index + 1) * 100}}</span>
+                <div ng-class="{answered: question.answered}">
+                    <span>{{($index + 1) * 100}}</span>
                 </div>
             </li>
         </ul>

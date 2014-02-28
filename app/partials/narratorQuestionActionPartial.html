@@ -12,12 +12,12 @@
 <div class="modal-body">
     <div class="row question-dialog">
         <div class="col-md-8">
-            <div>
+            <div class="text question">
                 A kérdés: {{question.question}}
 
                 <img ng-if="!!question.image" ng-src="{{question.image}}" style="display: block; min-width: 300px; max-width: 300px;"/>
             </div>
-            <div>
+            <div class="text answer">
                 A válasz: {{question.answer}}
             </div>
         </div>
@@ -27,10 +27,11 @@
                 <li ng-repeat="team in teams" class="team-field">
                     <div>
                         <span class="team-name">{{team.name}}</span>
+                        <span class="team-point">({{team.point}})</span>
                         <span class="text-right" ng-if="!!team.actionOrder">! {{team.actionOrder}} !</span>
                     </div>
-                    <button class="btn btn-primary" ng-click="correctAnswer(team)">Helyes</button>
-                    <!--button class="btn" ng-click="incorrectAnswer(team)">Téves</button-->
+                    <button class="btn btn-primary" ng-click="emitTeamPointChange(team, true)">+ {{value}}</button>
+                    <button class="btn btn-danger" ng-click="emitTeamPointChange(team, false)">- {{value}}</button>
                 </li>
             </ul>
         </div>
@@ -38,12 +39,20 @@
             Iranyitas
             <ul class="list-unstyled control-cont">
                 <li>
-                    <button class="btn btn-primary" ng-click="showQuestion()">Kerdes mutat</button>
-                    <button class="btn btn-primary" ng-click="hideQuestion()">Kerdes rejt</button>
-                    <button class="btn btn-primary" ng-click="showAnswer()">Valasz mutat</button>
-                    <button class="btn btn-primary" ng-click="hideAnswer()">Valasz rejt</button>
-                    <button class="btn btn-primary" ng-click="startTimer()">Ido indit</button>
-                </li>
+                    <div>Kerdes lathato</div>
+                    <button class="btn btn-success" ng-click="showQuestion()">Igen</button>
+                    <button class="btn btn-warning" ng-click="hideQuestion()">Nem</button></li>
+                 <li>
+                    <div>Valasz lathato</div>
+                    <button class="btn btn-success" ng-click="showAnswer()">Igen</button>
+                    <button class="btn btn-warning" ng-click="hideAnswer()">Nem</button>
+                 </li>
+                    <!-- <button class="btn btn-primary" ng-click="startTimer()">Ido indit</button> -->
+                 <li>
+                    <div>Kerdes valaszolt</div>
+                    <button class="btn btn-success" ng-click="emitQuestionState(true)">Igen</button>
+                    <button class="btn btn-warning" ng-click="emitQuestionState(false)">Nem</button>
+                 </li>
             </ul>
         </div>
     </div>
