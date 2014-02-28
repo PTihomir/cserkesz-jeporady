@@ -20,12 +20,15 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
 
   $scope.showQuestion = function () {
     socketInstance.emit('showQuestion', {
-
+      categoryId: $scope.category.id,
+      questionId: $scope.question.id
     });
   };
 
   $scope.hideQuestion = function () {
+    socketInstance.emit('hideQuestion', {
 
+    });
   };
 
   $scope.showAnswer = function () {

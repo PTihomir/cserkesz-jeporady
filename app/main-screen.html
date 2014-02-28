@@ -27,12 +27,7 @@
                     </li>
                 </ul>
             </div>
-            <!--<div class="row team-container">
-                <div class="col-sm-2" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
-                    <h4 class="text-center">{{team.name}}</h4>
-                    <h2 class="text-center"><span class="point">{{team.point}}</span> <span class="text">pont</span></h2>
-                </div>
-            </div> -->
+
             <div class="row team-container" ng-show="teams.length === 2">
                 <div class="col-sm-4" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
                     <div class="team-name text-center">{{team.name}}</div>
@@ -71,10 +66,7 @@
         <!-- Project files -->
         <script src="js/Jeporady.js"></script>
         <script src="js/controllers/JeporadyController.js"></script>
-        <script src="js/controllers/TeamDetailController.js"></script>
-        <script src="js/controllers/QuestionActionController.js"></script>
         <script src="js/controllers/QuestionViewController.js"></script>
-        <script src="js/factory/QuestionsFactory.js"></script>
 
     </body>
 </html>

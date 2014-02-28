@@ -2,6 +2,8 @@
 
 narratorModule.controller('NarratorController', function ($scope, $modal, $location, loginStatus, socketInstance) {
 
+    window.scopeData = $scope;
+
     if (!loginStatus.validLogin) {
         $location.path('/login');
         return;

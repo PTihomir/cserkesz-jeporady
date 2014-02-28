@@ -148,16 +148,23 @@ JeporadyServer.prototype.initNarratorSocket = function() {
 
             _this.saveSnapshot();
 
+            _this.emitTeamsUpdated();
+
         });
 
         socket.on('questionUpdated', function (data) {
 
         });
 
-        socket.on('showQuestion', function () {
-            console.log('******************* Show question');
+        socket.on('showQuestion', function (data) {
+            if (_this.display)
+                _this.display.emit('showQuestion', data);
         });
 
+        socket.on('hideQuestion', function () {
+            if (_this.display)
+                _this.display.emit('hideQuestion');
+        });
 
 
     });
@@ -172,11 +179,17 @@ JeporadyServer.prototype.initDisplaySocket = function() {
 
         console.log('**************** Display connected');
 
-        if (_this.teams) {
-            socket.emit('updateTeams', {teams: _this.teams.getTeams()});
-        } else {
-            console.log('**************** GAME NOT INITIALIZED');
-        }
+        socket.on('requestUpdate', function (data, callback) {
+        console.log('**************** Update requested');
+            if (_this.teams) {
+                socket.emit('update', {
+                    teams: _this.teams.getTeams(),
+                    game: _this.game.categories
+                });
+            } else {
+                socket.emit('invalidGameState', {});
+            }
+        });
 
     });
 
@@ -198,7 +211,7 @@ JeporadyServer.prototype.emitGameUpdated = function() {
 JeporadyServer.prototype.emitTeamsUpdated = function() {
 
     var data = {
-        teams: this.game.teams
+        teams: this.teams.getTeams(),
     };
 
     this.narrator.emit('update', data);
@@ -207,17 +220,17 @@ JeporadyServer.prototype.emitTeamsUpdated = function() {
 
 };
 
-JeporadyServer.prototype.emitTeamUpdated = function(id) {
+/*JeporadyServer.prototype.emitTeamUpdated = function(id) {
 
     var data = {
-        team: this.game.teams
+        team: this.game.getTeams()
     };
 
     this.narrator.emit('update', data);
 
     this.display.emit('update', data);
 
-};
+};*/
 
 
 module.exports = function(server) {

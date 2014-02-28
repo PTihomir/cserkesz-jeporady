@@ -1,79 +1,26 @@
 'use strict';
 
-jeporadyModule.controller('JeporadyController', function ($scope, $modal, gamesession) {
-    
-    $scope.categories = gamesession;
+jeporadyModule.controller('JeporadyController', function ($scope, $modal, socketInstance) {
 
-    console.log($scope.categories)
 
-    var socket = io.connect('/display');
-    
+    window.scopeData = $scope;
+
     // socket.on('connect')
 
-    socket.on('updateTeams', function (data) {
-        console.log(data);
-        $scope.teams = data.teams;
-        $scope.$apply();     
-    });
+    socketInstance.on('update', function (data) {
 
-    socket.on('clientAction', function (data) {
-        for (var i = 0; i < data.actions.length; i++) {
-            $scope.teams[data.actions[i]].actionOrder = i + 1;
+        if (data.teams) {
+            $scope.teams = data.teams;
+        }
+
+        if (data.game) {
+            $scope.categories = data.game;
         }
         $scope.$apply();
-
     });
 
-    $scope.resetTeams = function () {
-        socket.emit('resetTeams');
-        $.each($scope.teams, function (index, team) {
-            team.actionOrder = false;
-        });
-    };
-
-    $scope.openTeamDetail = function (team) {
-        var modalInstance = $modal.open({
-                templateUrl: 'partials/teamDetailPartial.html',
-                controller: TeamDetailController,
-                resolve: {
-                    team: function () {
-                        return team;
-                    }
-                }
-            });
-
-        modalInstance.result.then(function () {
-            socket.emit('changeTeam', {
-                id: team.id,
-                name: team.name,
-                point: team.point
-            });
-        }, function () {
-            console.info('Modal dismissed at: ' + new Date());
-        });
-    };
-
-    $scope.openQuestionAction = function (question, category, value) {
-        var modalInstance = $modal.open({
-            templateUrl: 'partials/questionActionPartial.html',
-            controller: QuestionActionController,
-            resolve: {
-                question: function () {
-                    return question;
-                }
-            }
-        });
-
-        modalInstance.result.then(function () {
-            $scope.openQuestionDetail(question, category, value);
-        }, function () {
-            console.info('Modal dismissed at: ' + new Date());
-        });
-    };
-
-
     $scope.openQuestionDetail = function (question, category, value) {
-        
+
         $scope.resetTeams();
 
         var modalInstance = $modal.open({
@@ -102,5 +49,10 @@ jeporadyModule.controller('JeporadyController', function ($scope, $modal, gamese
         });
     };
 
+    $scope.requestUpdate = function () {
+        socketInstance.emit('requestUpdate');
+    };
+
+    $scope.requestUpdate();
 
 });
