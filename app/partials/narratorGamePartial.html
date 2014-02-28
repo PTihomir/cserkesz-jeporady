@@ -5,7 +5,7 @@
                 <div>{{category.displayName}}
                 </div>
             </li>
-            <li class="question text-center" ng-repeat="question in category.questions" ng-click="openQuestionAction(question, category, ($index + 1) * 100)">
+            <li class="question text-center" ng-repeat="question in category.questions" ng-click="openQuestionDetail(question, category, ($index + 1) * 100)">
                 <div>
                     <span class="not-answered" ng-if="!question.answered">{{($index + 1) * 100}}</span>
                     <span class="answered" ng-if="question.answered">{{($index + 1) * 100}}</span>
@@ -13,12 +13,7 @@
             </li>
         </ul>
     </div>
-    <!--<div class="row team-container">
-        <div class="col-sm-2" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
-            <h4 class="text-center">{{team.name}}</h4>
-            <h2 class="text-center"><span class="point">{{team.point}}</span> <span class="text">pont</span></h2>
-        </div>
-    </div> -->
+
     <div class="row team-container" ng-show="teams.length === 2">
         <div class="col-sm-4" ng-repeat="team in teams" ng-click="openTeamDetail(team)" ng-class="{'col-sm-offset-2': $first}">
             <div class="team-name text-center">{{team.name}}</div>

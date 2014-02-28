@@ -81,6 +81,12 @@ JeporadyServer.prototype.initSocket = function() {
 };
 
 
+JeporadyServer.prototype.saveSnapshot = function() {
+
+    this.game.saveSnapshot();
+};
+
+
 JeporadyServer.prototype.initNarratorSocket = function() {
 
     var _this = this;
@@ -140,10 +146,16 @@ JeporadyServer.prototype.initNarratorSocket = function() {
         socket.on('teamChanged', function (data) {
             _this.teams.updateTeam(data.id, data);
 
+            _this.saveSnapshot();
+
         });
 
         socket.on('questionUpdated', function (data) {
 
+        });
+
+        socket.on('showQuestion', function () {
+            console.log('******************* Show question');
         });
 
 

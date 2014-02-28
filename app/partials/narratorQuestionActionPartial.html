@@ -1,0 +1,53 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>{{category.displayName}}</h3>
+        </div>
+        <div class="col-md-4">
+            <h3>{{value}}</h3>
+        </div>
+
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row question-dialog">
+        <div class="col-md-8">
+            <div>
+                A kérdés: {{question.question}}
+
+                <img ng-if="!!question.image" ng-src="{{question.image}}" style="display: block; min-width: 300px; max-width: 300px;"/>
+            </div>
+            <div>
+                A válasz: {{question.answer}}
+            </div>
+        </div>
+        <div class="col-md-2">
+            Csapatok
+            <ul class="list-unstyled">
+                <li ng-repeat="team in teams" class="team-field">
+                    <div>
+                        <span class="team-name">{{team.name}}</span>
+                        <span class="text-right" ng-if="!!team.actionOrder">! {{team.actionOrder}} !</span>
+                    </div>
+                    <button class="btn btn-primary" ng-click="correctAnswer(team)">Helyes</button>
+                    <!--button class="btn" ng-click="incorrectAnswer(team)">Téves</button-->
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            Iranyitas
+            <ul class="list-unstyled control-cont">
+                <li>
+                    <button class="btn btn-primary" ng-click="showQuestion()">Kerdes mutat</button>
+                    <button class="btn btn-primary" ng-click="hideQuestion()">Kerdes rejt</button>
+                    <button class="btn btn-primary" ng-click="showAnswer()">Valasz mutat</button>
+                    <button class="btn btn-primary" ng-click="hideAnswer()">Valasz rejt</button>
+                    <button class="btn btn-primary" ng-click="startTimer()">Ido indit</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

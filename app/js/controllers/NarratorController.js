@@ -54,7 +54,7 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $locat
             });
 
         modalInstance.result.then(function () {
-            socketInstance.emit('changeTeam', {
+            socketInstance.emit('teamChanged', {
                 id: team.id,
                 name: team.name,
                 point: team.point
@@ -64,32 +64,13 @@ narratorModule.controller('NarratorController', function ($scope, $modal, $locat
         });
     };
 
-    $scope.openQuestionAction = function (question, category, value) {
-        var modalInstance = $modal.open({
-            templateUrl: 'partials/questionActionPartial.html',
-            controller: QuestionActionController,
-            resolve: {
-                question: function () {
-                    return question;
-                }
-            }
-        });
-
-        modalInstance.result.then(function () {
-            $scope.openQuestionDetail(question, category, value);
-        }, function () {
-            console.info('Modal dismissed at: ' + new Date());
-        });
-    };
-
-
     $scope.openQuestionDetail = function (question, category, value) {
 
         $scope.resetTeams();
 
         var modalInstance = $modal.open({
-            templateUrl: 'partials/questionViewPartial.html',
-            controller: QuestionViewController,
+            templateUrl: 'partials/narratorQuestionActionPartial.html',
+            controller: QuestionActionController,
             resolve: {
                 data: function () {
                     return {

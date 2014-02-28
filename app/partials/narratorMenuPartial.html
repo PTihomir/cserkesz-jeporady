@@ -3,9 +3,9 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label for="gameslist">Játék lista</label>
-                <select id="gameslist" ng-model="result.game" size="{{games.length}}">
+                <select id="gameslist" ng-model="result.game">
                     <option value="0">-- Válasszon --</option>
-                    <option ng-repeat="g in games" value="{{g}}">{{g}}</option>            
+                    <option ng-repeat="g in games" value="{{g}}">{{g}}</option>
                 </select>
             </div>
 
@@ -27,7 +27,7 @@
                 <label for="snapshot">Pillanatkép lista</label>
                 <select id="snapshot" ng-model="result.snapshot" size="{{snapshots.length}}">
                     <option value="0">-- Válasszon --</option>
-                    <option ng-repeat="s in snapshots" value="{{s}}">{{s}}</option>            
+                    <option ng-repeat="s in snapshots" value="{{s}}">{{s}}</option>
                 </select>
             </div>
 

@@ -1,7 +1,7 @@
 var narratorModule = angular.module('narrator', ['ngRoute', 'ui.bootstrap']);
 
 narratorModule.value('loginStatus', {
-    validLogin: false
+    validLogin: true
 });
 
 narratorModule.factory('socketInstance', function () {
@@ -55,6 +55,6 @@ narratorModule.config(['$routeProvider',
                 controller: 'NarratorController'
             }).
             otherwise({
-                redirectTo: 'login'
+                redirectTo: '/game'
             });
     }]);
