@@ -43,6 +43,35 @@ managerModule.controller('ManagerController', function ($scope, $modal, socketIn
         });
     };
 
+    $scope.loadGame = function () {
+
+        var game_id = $scope.result.game,
+            categories = null;
+        if (isNaN(game_id) && game_id != 0) {
+
+            socketInstance.emit('loadGame', {
+                filename: game_id,
+            }, function (data) {
+                game_id = game_id.split('.').shift();
+                if (typeof game_id == 'object') {
+                    game_id = game_id.join('.');
+                }
+                $scope.fileName = game_id;
+                $scope.game.displayName = data.displayName;
+
+                categories = data.categories;
+                for (var i = 0, len = categories.length; i < len; i++) {
+                    $scope.selectedCategories[i] = categories[i].id;
+                    $scope.onChange(i);
+                }
+                $scope.$apply();
+
+            });
+
+        } 
+
+    }
+
     $scope.onChange = function (orderNumber) {
 
         var id = $scope.selectedCategories[orderNumber],

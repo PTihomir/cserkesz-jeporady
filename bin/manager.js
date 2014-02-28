@@ -1,5 +1,7 @@
 var socketio = require('socket.io'),
-    questions = require('./questions.js');
+    fs = require('fs'),
+    questions = require('./questions.js'),
+    gameDir = './database/games/';
 
 function ManagerServer(server) {
     this.server = server;
@@ -25,13 +27,34 @@ ManagerServer.prototype.initSocket = function() {
 
         });
 
+        socket.on('loadGame', function (data, callback) {
+
+            questions.getGame(data.filename, callback);
+
+        });
+
     });
 
 
 };
 
 
-
 module.exports = function(server) {
     return new ManagerServer(server);
 };
+
+
+module.exports.getGame = function (filename, callback) {
+    fs.readFile(gameDir + filename, 'utf8', function (err, data) {
+        if (err) {
+            console.log('Error: ' + err);
+            return;
+        }
+
+        var game = JSON.parse(data);
+
+        callback(game);
+
+    });
+};
+
