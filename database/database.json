@@ -711,7 +711,7 @@
         "answer": "9. számú cserkész törvény: A cserkész takarékos!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_1.jpg"
+        "image": "/database/images/torvenyek/torveny_1_1.jpg"
       },
       {
         "id": 10080,
@@ -719,7 +719,7 @@
         "answer": "10 számú, A cserkész testben és lélekben tiszta!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_2.jpg"
+        "image": "/database/images/torvenyek/torveny_1_2.jpg"
       },
       {
         "id": 10081,
@@ -727,7 +727,7 @@
         "answer": "6. számú, A cserkész szereti a természetet, kíméli a növényeket, jó az állatokhoz!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_3.jpg"
+        "image": "/database/images/torvenyek/torveny_1_3.jpg"
       },
       {
         "id": 10082,
@@ -735,7 +735,7 @@
         "answer": "4. számú , A cserkész minden cserkészt testvérének tekint!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_4.jpg"
+        "image": "/database/images/torvenyek/torveny_1_4.jpg"
       },
       {
         "id": 10083,
@@ -743,7 +743,7 @@
         "answer": "8. számú, A cserkész vidám és meggoldolt!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_5.jpg"
+        "image": "/database/images/torvenyek/torveny_1_5.jpg"
       },
       {
         "id": 10084,
@@ -751,7 +751,7 @@
         "answer": "1. számú, A cserkész egyenes lelkű és feltétlenül igazat mond!",
         "comment": "",
         "sound": null,
-        "image": "images/torvenyek/torveny_1_6.jpg"
+        "image": "/database/images/torvenyek/torveny_1_6.jpg"
       }
     ]
   },
@@ -765,7 +765,7 @@
         "answer": "A",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_1.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_1.jpg"
       },
       {
         "id": 10086,
@@ -773,7 +773,7 @@
         "answer": "SZ",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_2.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_2.jpg"
       },
       {
         "id": 10087,
@@ -781,7 +781,7 @@
         "answer": "Í",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_3.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_3.jpg"
       },
       {
         "id": 10088,
@@ -789,7 +789,7 @@
         "answer": "Bab",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_4.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_4.jpg"
       },
       {
         "id": 10089,
@@ -797,7 +797,7 @@
         "answer": "Nem (csiga)",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_5.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_5.jpg"
       },
       {
         "id": 10090,
@@ -805,7 +805,7 @@
         "answer": "Cserkész",
         "comment": "",
         "sound": null,
-        "image": "images/rovas_iras/rovas_iras_1_6.jpg"
+        "image": "/database/images/rovas_iras/rovas_iras_1_6.jpg"
       }
     ]
   },
@@ -819,7 +819,7 @@
         "answer": "Nap",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_1.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_1.jpg"
       },
       {
         "id": 10092,
@@ -827,7 +827,7 @@
         "answer": "Hold",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_2.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_2.jpg"
       },
       {
         "id": 10093,
@@ -835,7 +835,7 @@
         "answer": "Szaturnusz",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_3.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_3.jpg"
       },
       {
         "id": 10094,
@@ -843,7 +843,7 @@
         "answer": "Mars",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_4.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_4.jpg"
       },
       {
         "id": 10095,
@@ -851,7 +851,7 @@
         "answer": "Uránusz",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_5.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_5.jpg"
       },
       {
         "id": 10096,
@@ -859,7 +859,7 @@
         "answer": "Jupiter",
         "comment": "",
         "sound": null,
-        "image": "images/csillagaszat/kcs/csillagaszat_1_6.jpg"
+        "image": "/database/images/csillagaszat/kcs/csillagaszat_1_6.jpg"
       }
     ]
   },
@@ -927,7 +927,7 @@
         "answer": "Nagygöncöl",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_1.gif"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_1.gif"
       },
       {
         "id": 10104,
@@ -935,7 +935,7 @@
         "answer": "Kisgöncöl",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_2.jpg"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_2.jpg"
       },
       {
         "id": 10105,
@@ -943,7 +943,7 @@
         "answer": "Orion",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_3.jpg"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_3.jpg"
       },
       {
         "id": 10106,
@@ -951,7 +951,7 @@
         "answer": "Sárkány",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_4.jpg"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_4.jpg"
       },
       {
         "id": 10107,
@@ -959,7 +959,7 @@
         "answer": "Hattyú",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_5.jpg"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_5.jpg"
       },
       {
         "id": 10108,
@@ -967,7 +967,7 @@
         "answer": "Nyúl",
         "comment": "",
         "sound": null,
-        "image": "images/csillagkepek/cs/csillagkepek_1_6.jpg"
+        "image": "/database/images/csillagkepek/cs/csillagkepek_1_6.jpg"
       }
     ]
   },
@@ -981,7 +981,7 @@
         "answer": "Eiffel-torony",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_10.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_10.jpg"
       },
       {
         "id": 10110,
@@ -989,7 +989,7 @@
         "answer": "Diadalív, Párizs",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_20.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_20.jpg"
       },
       {
         "id": 10111,
@@ -997,7 +997,7 @@
         "answer": "Egyiptomi piramisok",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_30.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_30.jpg"
       },
       {
         "id": 10112,
@@ -1005,7 +1005,7 @@
         "answer": "Szabadkai Városháza",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_40.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_40.jpg"
       },
       {
         "id": 10113,
@@ -1013,7 +1013,7 @@
         "answer": "Szabadkai Zsinagóga",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_50.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_50.jpg"
       },
       {
         "id": 10114,
@@ -1021,7 +1021,7 @@
         "answer": "Parlament, Magyarország",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/kcs/epiteszet_1_60.jpg"
+        "image": "/database/images/epiteszet/kcs/epiteszet_1_60.jpg"
       }
     ]
   },
@@ -1035,7 +1035,7 @@
         "answer": "Római kolosszeum",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_10.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_10.jpg"
       },
       {
         "id": 10116,
@@ -1043,7 +1043,7 @@
         "answer": "Stonehenge, Anglia",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_20.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_20.jpg"
       },
       {
         "id": 10117,
@@ -1051,7 +1051,7 @@
         "answer": "Kínai nagy fal",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_30.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_30.jpg"
       },
       {
         "id": 10118,
@@ -1059,7 +1059,7 @@
         "answer": "Tádzs Mahal",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_40.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_40.jpg"
       },
       {
         "id": 10119,
@@ -1067,7 +1067,7 @@
         "answer": "Aya Szophia",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_50.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_50.jpg"
       },
       {
         "id": 10120,
@@ -1075,7 +1075,7 @@
         "answer": "Sagrada Familia, Barcelona",
         "comment": "",
         "sound": null,
-        "image": "images/epiteszet/cs/epiteszet_1_60.jpg"
+        "image": "/database/images/epiteszet/cs/epiteszet_1_60.jpg"
       }
     ]
   },
@@ -1089,7 +1089,7 @@
         "answer": "Newton",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_1.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_1.jpg"
       },
       {
         "id": 10122,
@@ -1097,7 +1097,7 @@
         "answer": "Galileo Galilei",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_2.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_2.jpg"
       },
       {
         "id": 10123,
@@ -1105,7 +1105,7 @@
         "answer": "Archimedes",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_3.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_3.jpg"
       },
       {
         "id": 10124,
@@ -1113,7 +1113,7 @@
         "answer": "Einstein",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_4.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_4.jpg"
       },
       {
         "id": 10125,
@@ -1121,7 +1121,7 @@
         "answer": "Nikola Tesla",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_5.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_5.jpg"
       },
       {
         "id": 10126,
@@ -1129,7 +1129,7 @@
         "answer": "Teller Ede",
         "comment": "",
         "sound": null,
-        "image": "images/fizika/kcs/fizika_1_6.jpg"
+        "image": "/database/images/fizika/kcs/fizika_1_6.jpg"
       }
     ]
   },
@@ -1197,7 +1197,7 @@
         "answer": "Magyarország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_1.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_1.jpg"
       },
       {
         "id": 10134,
@@ -1205,7 +1205,7 @@
         "answer": "Olaszország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_2.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_2.jpg"
       },
       {
         "id": 10135,
@@ -1213,7 +1213,7 @@
         "answer": "Nagy Britannia",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_3.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_3.jpg"
       },
       {
         "id": 10136,
@@ -1221,7 +1221,7 @@
         "answer": "Horvátország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_4.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_4.jpg"
       },
       {
         "id": 10137,
@@ -1229,7 +1229,7 @@
         "answer": "Ausztrália",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_5.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_5.jpg"
       },
       {
         "id": 10138,
@@ -1237,7 +1237,7 @@
         "answer": "Németország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/kcs/foldrajz_1_6.jpg"
+        "image": "/database/images/foldrajz/kcs/foldrajz_1_6.jpg"
       }
     ]
   },
@@ -1251,7 +1251,7 @@
         "answer": "USA",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_1.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_1.jpg"
       },
       {
         "id": 10140,
@@ -1259,7 +1259,7 @@
         "answer": "Ausztria",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_2.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_2.jpg"
       },
       {
         "id": 10141,
@@ -1267,7 +1267,7 @@
         "answer": "Oroszország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_3.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_3.jpg"
       },
       {
         "id": 10142,
@@ -1275,7 +1275,7 @@
         "answer": "Ciprus",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_4.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_4.jpg"
       },
       {
         "id": 10143,
@@ -1283,7 +1283,7 @@
         "answer": "Izland",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_5.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_5.jpg"
       },
       {
         "id": 10144,
@@ -1291,7 +1291,7 @@
         "answer": "Finnország",
         "comment": "",
         "sound": null,
-        "image": "images/foldrajz/cs/foldrajz_1_6.jpg"
+        "image": "/database/images/foldrajz/cs/foldrajz_1_6.jpg"
       }
     ]
   },
@@ -1737,7 +1737,7 @@
         "answer": "Szabadkai városháza",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_1.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_1.jpg"
       },
       {
         "id": 10194,
@@ -1745,7 +1745,7 @@
         "answer": "Pétervárad",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_2.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_2.jpg"
       },
       {
         "id": 10195,
@@ -1753,7 +1753,7 @@
         "answer": "Csantavéri templom",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_3.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_3.jpg"
       },
       {
         "id": 10196,
@@ -1761,7 +1761,7 @@
         "answer": "Újvidék központja",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_4.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_4.jpg"
       },
       {
         "id": 10197,
@@ -1769,7 +1769,7 @@
         "answer": "Szabadkai zsinagóga",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_5.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_5.jpg"
       },
       {
         "id": 10198,
@@ -1777,7 +1777,7 @@
         "answer": "Bács vára",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/kcs/holjarok_1_6.jpg"
+        "image": "/database/images/holjarunk/kcs/holjarok_1_6.jpg"
       }
     ]
   },
@@ -1791,7 +1791,7 @@
         "answer": "Péterváradi napóra",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_1.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_1.jpg"
       },
       {
         "id": 10200,
@@ -1799,7 +1799,7 @@
         "answer": "Aracs",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_2.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_2.jpg"
       },
       {
         "id": 10201,
@@ -1807,7 +1807,7 @@
         "answer": "Galambóc",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_3.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_3.jpg"
       },
       {
         "id": 10202,
@@ -1815,7 +1815,7 @@
         "answer": "Raichel palota Szabadka",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_4.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_4.jpg"
       },
       {
         "id": 10203,
@@ -1823,7 +1823,7 @@
         "answer": "Nagybecskerek központja",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_5.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_5.jpg"
       },
       {
         "id": 10204,
@@ -1831,7 +1831,7 @@
         "answer": "Zombori napóra",
         "comment": "",
         "sound": null,
-        "image": "images/holjarunk/cs/holjarok_1_6.jpg"
+        "image": "/database/images/holjarunk/cs/holjarok_1_6.jpg"
       }
     ]
   },
@@ -2007,7 +2007,7 @@
         "answer": "Mátyás király",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_1.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_1.jpg"
       },
       {
         "id": 10224,
@@ -2015,7 +2015,7 @@
         "answer": "Petőfi Sándor",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_2.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_2.jpg"
       },
       {
         "id": 10225,
@@ -2023,7 +2023,7 @@
         "answer": "Dózsa György",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_3.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_3.jpg"
       },
       {
         "id": 10226,
@@ -2031,7 +2031,7 @@
         "answer": "Attila",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_4.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_4.jpg"
       },
       {
         "id": 10227,
@@ -2039,7 +2039,7 @@
         "answer": "Büszke Botond ",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_5.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_5.jpg"
       },
       {
         "id": 10228,
@@ -2047,7 +2047,7 @@
         "answer": "Toldi",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/kcs/kepcsarnok_1_6.jpg"
+        "image": "/database/images/kepcsarnok/kcs/kepcsarnok_1_6.jpg"
       }
     ]
   },
@@ -2061,7 +2061,7 @@
         "answer": "Hunyadi János",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_1.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_1.jpg"
       },
       {
         "id": 10230,
@@ -2069,7 +2069,7 @@
         "answer": "Kossuth Lajos",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_2.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_2.jpg"
       },
       {
         "id": 10231,
@@ -2077,7 +2077,7 @@
         "answer": "Rákóczi Ferenc II.",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_3.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_3.jpg"
       },
       {
         "id": 10232,
@@ -2085,7 +2085,7 @@
         "answer": "Szent István",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_4.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_4.jpg"
       },
       {
         "id": 10233,
@@ -2093,7 +2093,7 @@
         "answer": "Gábor Áron",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_5.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_5.jpg"
       },
       {
         "id": 10234,
@@ -2101,7 +2101,7 @@
         "answer": "Horthy Miklós",
         "comment": "",
         "sound": null,
-        "image": "images/kepcsarnok/cs/kepcsarnok_1_6.jpg"
+        "image": "/database/images/kepcsarnok/cs/kepcsarnok_1_6.jpg"
       }
     ]
   },
@@ -2386,52 +2386,52 @@
     "displayName": "Országos jelvények",
     "questions": [
       {
-        "id": 10259,
+        "id": 10265,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Magyarország",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_1.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_1.svg"
       },
       {
-        "id": 10259,
+        "id": 10266,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Egyesült Királyság",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_2.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_2.svg"
       },
       {
-        "id": 10259,
+        "id": 10267,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Japán",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_3.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_3.svg"
       },
       {
-        "id": 10259,
+        "id": 10268,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Izrael",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_4.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_4.svg"
       },
       {
-        "id": 10259,
+        "id": 10269,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Brazilia",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_5.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_5.svg"
       },
       {
-        "id": 10259,
+        "id": 10270,
         "question": "Melyik ország zászlaját látod a képen?",
         "answer": "Ausztrália",
         "comment": "",
         "sound": null,
-        "image": "images/zaszlok/cs/zaszlok_1_6.svg"
+        "image": "/database/images/zaszlok/cs/zaszlok_1_6.svg"
       }
     ]
   }

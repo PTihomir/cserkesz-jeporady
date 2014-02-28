@@ -18,11 +18,16 @@ jeporadyModule.factory('socketInstance', function () {
 
     });
 
-    socket.on('showQuestion', function () {
-        // if(handlers.invalidGameState) {
-        //     handlers.invalidGameState();
-        // }
+    socket.on('showQuestion', function (data) {
+        if(handlers.showQuestion) {
+            handlers.showQuestion(data);
+        }
+    });
 
+    socket.on('hideQuestion', function () {
+        if(handlers.hideQuestion) {
+            handlers.hideQuestion();
+        }
     });
 
 

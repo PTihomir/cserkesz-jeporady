@@ -1,0 +1,73 @@
+{
+  "categories": [
+    {
+      "id": "allatosMesek",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    },
+    {
+      "id": "csomok",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    },
+    {
+      "id": "fovarosok",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    },
+    {
+      "id": "talaloskerdes",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    },
+    {
+      "id": "idosebb",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    },
+    {
+      "id": "helyesiras",
+      "questions": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006
+      ]
+    }
+  ],
+  "createdBy": "Tihomir",
+  "creationDate": 1393103157000,
+  "displayName": "Example Game for Testing"
+}
