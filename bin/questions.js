@@ -133,13 +133,16 @@ module.exports.getGame = function (filename, callback) {
     });
 };
 
-module.exports.saveGame = function (filename, data) {
+module.exports.saveGame = function (filename, data, callback) {
 
     var stringedData = JSON.stringify(data);
 
     fs.writeFile(gameDir + filename, stringedData, function (err) {
         if (err) throw err;
         console.log('Game is saved!');
+
+        if (callback)
+            callback();
     });
 };
 
