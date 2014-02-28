@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="narrator">
+<html ng-app="manager">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/main-screen.css">
+        <link rel="stylesheet" href="css/manager-screen.css">
     </head>
-    <body>
+    <body class="container" ng-controller="ManagerController" ng-init="loadData()">
+        <div class="row">
+            <div class="col-md-10">
+                <label> Letezo jatek betoltese:
+                    <select id="gameslist" ng-model="result.game">
+                        <option value="0">-- Válasszon --</option>
+                        <option ng-repeat="g in games" value="{{g}}">{{g}}</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <label>File neve: <input type="text" ng-model="fileName"/></label>
+            </div>
+            <div class="col-md-5">
+                <label>Jatek neve: <input type="text" ng-model="game.displayName"/></label>
+            </div>
+            <div class="col-md-1">
+                <button ng-click="onSaveGame()"/>Save</button>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-2 form-group" ng-repeat="ordNumber in [0,1,2,3,4,5]">
+                <select class="col-xs-12" data-id="{{ordNumber}}" ng-model="selectedCategories[ordNumber]" ng-change="onChange(ordNumber)">
+                    <option ng-repeat="g in questions" value="{{g.id}}">{{g.displayName}}</option>
+                </select>
+                <ul ng-show="!!detailedCategories[ordNumber]">
+                    <li ng-repeat="question in detailedCategories[ordNumber].questions">
+                        <h6>{{question.question}}
+                        </h6>
+                        <p>
+                        {{question.answer}}
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
+          </div>
+        <div id="ohsnap"></div>
         <!-- Library files -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="lib/jquery/1.10.2/jquery-1.10.2.min.js"><\/script>')</script>
@@ -19,6 +58,7 @@
         <script src="lib/angular/1.2.0/angular-route.js"></script>
         <script src="lib/bootstrap/3.0.3/js/bootstrap.js"></script>
         <script src="lib/angular-ui/0.9.0/ui-bootstrap-tpls.js"></script>
+        <script src="lib/ohsnap/ohsnap.js"></script>
 
         <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 
@@ -26,14 +66,7 @@
         <script src="js/plugins.js"></script>
 
         <!-- Project files -->
-        <script src="js/Narrator.js"></script>
-        <script src="js/controllers/LoginController.js"></script>
-        <script src="js/controllers/MenuController.js"></script>
-        <script src="js/controllers/NarratorController.js"></script>
-        <!-- <script src="js/controllers/TeamDetailController.js"></script>
-        <script src="js/controllers/QuestionActionController.js"></script>
-        <script src="js/controllers/QuestionViewController.js"></script>
-        <script src="js/factory/QuestionsFactory.js"></script> -->
-
+        <script src="js/Manager.js"></script>
+        <script src="js/controllers/ManagerController.js"></script>
     </body>
 </html>
