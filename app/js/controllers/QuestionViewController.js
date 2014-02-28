@@ -4,6 +4,7 @@ var QuestionViewController = function ($scope, $modalInstance, data) {
   $scope.category = data.category;
   $scope.value = data.value;
   $scope.teams = data.teams;
+  console.log($scope);
 
   $scope.correctAnswer = function (team) {
     team.point = parseInt(team.point) + parseInt($scope.value);
