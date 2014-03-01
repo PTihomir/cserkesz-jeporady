@@ -30,6 +30,18 @@ jeporadyModule.factory('socketInstance', function () {
         }
     });
 
+    socket.on('showAnswer', function (data) {
+        if(handlers.showAnswer) {
+            handlers.showAnswer(data);
+        }
+    });
+
+    socket.on('hideAnswer', function () {
+        if(handlers.hideAnswer) {
+            handlers.hideAnswer();
+        }
+    });
+
 
     return {
         emit: function () {

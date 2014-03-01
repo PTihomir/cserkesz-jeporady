@@ -237,18 +237,6 @@ JeporadyServer.prototype.emitTeamsUpdated = function() {
 
 };
 
-/*JeporadyServer.prototype.emitTeamUpdated = function(id) {
-
-    var data = {
-        team: this.game.getTeams()
-    };
-
-    this.narrator.emit('update', data);
-
-    this.display.emit('update', data);
-
-};*/
-
 
 module.exports = function(server) {
     return new JeporadyServer(server);

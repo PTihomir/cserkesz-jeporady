@@ -15,7 +15,17 @@
             <div class="text question">
                 A kérdés: {{question.question}}
 
-                <img ng-if="!!question.image" ng-src="{{question.image}}" style="display: block; min-width: 300px; max-width: 300px;"/>
+                <img ng-if="!!question.image" ng-src="{{question.image}}" style="display: block; min-width: 200px; min-height: 200px; max-width: 350px; max-height: 350px;"/>
+                
+                <audio controls ng-if="!!question.sound">
+                    <source ng-src="{{question.sound}}" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                
+                <video controls ng-if="!!question.video">
+                    <source ng-src="{{question.video}}" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="text answer">
                 A válasz: {{question.answer}}
@@ -59,4 +69,5 @@
 </div>
 <div class="modal-footer">
     <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    <button class="btn btn-alert" ng-click="cancelAll()">Cancel All</button>
 </div>

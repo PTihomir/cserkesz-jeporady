@@ -4,8 +4,15 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
   $scope.category = data.category;
   $scope.value = data.value;
   $scope.teams = data.teams;
+  console.log($scope.question);
 
   $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+
+  $scope.cancelAll = function () {
+    $scope.hideQuestion();
+    $scope.hideAnswer();
     $modalInstance.dismiss('cancel');
   };
 
@@ -21,11 +28,14 @@ var QuestionActionController = function ($scope, $modalInstance, socketInstance,
   };
 
   $scope.showAnswer = function () {
-
+    socketInstance.emit('showAnswer', {
+      categoryId: $scope.category.id,
+      questionId: $scope.question.id
+    });
   };
 
   $scope.hideAnswer = function () {
-
+    socketInstance.emit('hideAnswer');
   };
 
   $scope.startTimer = function () {

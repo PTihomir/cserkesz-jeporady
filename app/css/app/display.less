@@ -1,19 +1,17 @@
-@font-face {
-  font-family: 'Henny Penny';
-  src: url('fonts/HennyPenny-Regular.ttf') format('truetype');
+.modal-dialog {
+    width: 90%;
 }
 
-@font-face {
-  font-family: 'Peralta';
-  src: url('fonts/Peralta-Regular.ttf') format('truetype');
-}
 
 body {
-    background-color: #B0DAEA;
+    background-color: #FFF2C2;
 }
+
 .main-title {
-    font-family: 'Henny Penny', cursive;
-    text-shadow: 0 0 3px black;
+}
+
+.btn {
+    padding: 16px 10px;
 }
 
 .team-container {
@@ -27,7 +25,6 @@ body {
         padding: 10px 0;
 
         .team-name {
-            font-family: 'Henny Penny', cursive;
             font-size: 2em;
             font-style: italic;
             font-weight: bold;
@@ -35,14 +32,12 @@ body {
         }
 
         .point {
-            font-family: 'Peralta', cursive;
             font-size: 4em;
             display: block;
             margin-top: -30px;
         }
 
         .point-label {
-            font-family: 'Peralta', cursive;
             font-size: 1.5em;
             margin-top: -15px;
         }
@@ -51,52 +46,96 @@ body {
 
 .category {
     li {
-        border: 1px solid;
         list-style-type: none;
         margin: 5px 0;
     }
 
-    .question-title {
+    .question-title, .answer-title {
         div {
-            background-color: black;
-            color: white;
+            border: 1px solid;
+            background-color: #C2CFFF;
+            font-size: 18px;
+            line-height: 18px;
+            height: 50px;
+            padding: 5px;
         }
     }
     .question {
+
         div {
-            height: 50px;
-            background-color: black;
+            border: 1px solid;
+            height: 45px;
+            background-color: #C2CFFF;
+
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 2em;
+
+            box-shadow: 3px 3px 1px #AAAAAA;
 
             span {
-                position: relative;
-                top: 30%;
+                line-height: 45px;
+            }
 
-                &.answered {
-                    color: #333333;
-                }
+            &.answered {
+                border: 1px dotted;
+                font-weight: normal;
+                font-size: 1em;
+                opacity: 0.4;
 
-                &.not-answered {
-                    font-weight: bold;
-                    font-size: 1.3em;
-                    color: white;
-                }
+                box-shadow: none;
+
+
             }
 
         }
     }
 }
 
-.question-dialog {
+
+.answer-dialog {
+  .answer {
+    font-size: 40px;
+    color: #009900;
+  }
+}
+.question-dialog, .answer-dialog {
+    font-size: 30px;
+
     li {
         padding: 5px;
         margin: 5px 0;
     }
 
+    .text {
+        font-size: 30px;
+        margin: 10px 0;
+
+        &.answer {
+
+        }
+
+        &.question {
+
+        }
+    }
+
     .team-name {
         font-size: 1.4em;
     }
+
+    .team-name {
+        font-size: 1em;
+    }
+
+    .control-cont {
+        button {
+            // margin: 5px 0;
+        }
+    }
 }
 
+/*
 .category {
   padding: 0;
 }
@@ -174,3 +213,4 @@ body {
 .question-dialog .team-name {
   font-size: 1.4em;
 }
+*/

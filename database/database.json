@@ -2222,7 +2222,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "Elvesztettem zsebkendőmet",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_1.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_1.avi",
         "sound": null,
         "image": null
       },
@@ -2231,7 +2231,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "Hulla a szilva a fáról",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_2.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_2.avi",
         "sound": null,
         "image": null
       },
@@ -2240,7 +2240,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "Búj búj zöld ág",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_3.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_3.avi",
         "sound": null,
         "image": null
       },
@@ -2249,7 +2249,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "Erdő erdő erdő marosszéki kerek erdő...",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_4.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_4.avi",
         "sound": null,
         "image": null
       },
@@ -2258,7 +2258,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "A part alatt...",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_5.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_5.avi",
         "sound": null,
         "image": null
       },
@@ -2267,7 +2267,7 @@
         "question": "Nézd végig a videót és mond meg melyik népdalról-gyerekdalról van szó!",
         "answer": "Tavaszi szél...",
         "comment": "",
-        "video": "videos/nepdalok/cs/nepdalok_1_6.avi",
+        "video": "/database/videos/nepdalok/cs/nepdalok_1_6.avi",
         "sound": null,
         "image": null
       }
@@ -2282,7 +2282,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Himnusz",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_1.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_1.mp3",
         "image": null
       },
       {
@@ -2290,7 +2290,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Túl a vizen egy kosár",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_2.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_2.mp3",
         "image": null
       },
       {
@@ -2298,7 +2298,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Tavaszi szel",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_3.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_3.mp3",
         "image": null
       },
       {
@@ -2306,7 +2306,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Százados úr sej haj",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_4.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_4.mp3",
         "image": null
       },
       {
@@ -2314,7 +2314,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Erdő erdő erdő...",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_5.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_5.mp3",
         "image": null
       },
       {
@@ -2322,7 +2322,7 @@
         "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Szélről legeljetek...",
         "comment": "",
-        "sound": "sounds/nepdalok/cs/nepdalok_1_6.mp3",
+        "sound": "/database/sounds/nepdalok/cs/nepdalok_1_6.mp3",
         "image": null
       }
     ]
@@ -2432,6 +2432,165 @@
         "comment": "",
         "sound": null,
         "image": "/database/images/zaszlok/cs/zaszlok_1_6.svg"
+      }
+    ]
+  },{
+    "id": "talalos_kerdes_1",
+    "displayName": "Talalos kerdes",
+    "questions": [
+      {
+        "id": 11265,
+        "question": "Egy kis házban öt kis szoba sorakozik szépen, öt kis ember bújik oda melegedni télen.",
+        "answer": "Kesztyű",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11266,
+        "question": "Foga van és mégsem harap.",
+        "answer": "Fésű",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11267,
+        "question": "Szádba teszed, mégsem eszed, mi az?",
+        "answer": "Kanál",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11268,
+        "question": "Akárhová vitték, mindig fejbe verték.",
+        "answer": "Szög",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11269,
+        "question": "Se oldala, se feneke, mégis megáll a víz benne.",
+        "answer": "Felhő",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11270,
+        "question": "Akkor vagyok legmelegebb, amikor hideg van. Akkor vagyok leghidegebb, amikor meleg van.",
+        "answer": "Pince",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },{
+    "id": "talalos_kerdes_2",
+    "displayName": "Talalos kerdes",
+    "questions": [
+      {
+        "id": 11271,
+        "question": "Fúr-farag, de mégsem ács, kopog, mint a kalapács. Fák orvosa, doktora, erdőben az otthona.",
+        "answer": "Harkály",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11272,
+        "question": "Szürke szárnyú nagy madár, szürke lesz a nagy határ, ha ősszel a földre száll.",
+        "answer": "Köd",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11273,
+        "question": "Két kezemmel füled fogom, s ott csücsülök az orrodon.",
+        "answer": "Szemüveg",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11274,
+        "question": "Melyik karó véd a hideg ellen?",
+        "answer": "A takaró",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11275,
+        "question": "Csak a tiéd, mégis mások használják többet. Mi az?",
+        "answer": "A neved",
+        "comment": "",
+        "sound": null,
+        "image": null
+      },
+      {
+        "id": 11276,
+        "question": "Vadonatúj, mégis lyukas, megfoltozzák, semmit sem ér.",
+        "answer": "Szita",
+        "comment": "",
+        "sound": null,
+        "image": null
+      }
+    ]
+  },{
+    "id": "csomok",
+    "displayName": "Megkotod, kienged?",
+    "questions": [
+      {
+        "id": 11277,
+        "question": "",
+        "answer": "Kofa",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/kofa.jpg"
+      },
+      {
+        "id": 11278,
+        "question": "",
+        "answer": "Egyszeru kettos",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/egyszeru_kettos.jpg"
+      },
+      {
+        "id": 11279,
+        "question": "",
+        "answer": "Diszito nyolcas",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/diszito_nyolcas.jpg"
+      },
+      {
+        "id": 11280,
+        "question": "",
+        "answer": "Csuszo hurok",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/csuszo_hurok.jpg"
+      },
+      {
+        "id": 11281,
+        "question": "",
+        "answer": "Ivelt kettos",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/ivelt_kettos.jpg"
+      },
+      {
+        "id": 11282,
+        "question": "",
+        "answer": "Szorito nyolcas",
+        "comment": "",
+        "sound": null,
+        "image": "/database/images/csomok/szorito_nyolcas.jpg"
       }
     ]
   }
