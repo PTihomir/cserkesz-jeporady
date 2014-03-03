@@ -586,7 +586,7 @@
       {
         "id": 10066,
         "question": "Melyik rajzfilmből származik az idézet :  \"Hacsak valaki nem tesz az ügyért, komám, akkor semmi sem fog megjavulni. De nem ám!\"",
-        "answer": "Dr.Seuss: A Lorax (persze a Dr.Seuss nem muszáj mondaniuk)",
+        "answer": "Dr.Seuss: A Lorax",
         "comment": "",
         "sound": null,
         "image": null
@@ -2279,7 +2279,7 @@
     "questions": [
       {
         "id": 10253,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Himnusz",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_1.mp3",
@@ -2287,7 +2287,7 @@
       },
       {
         "id": 10254,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Túl a vizen egy kosár",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_2.mp3",
@@ -2295,7 +2295,7 @@
       },
       {
         "id": 10255,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Tavaszi szel",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_3.mp3",
@@ -2303,7 +2303,7 @@
       },
       {
         "id": 10256,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Százados úr sej haj",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_4.mp3",
@@ -2311,7 +2311,7 @@
       },
       {
         "id": 10257,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Erdő erdő erdő...",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_5.mp3",
@@ -2319,64 +2319,10 @@
       },
       {
         "id": 10258,
-        "question": "Figyelmeseen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
+        "question": "Figyelmesen hallgasd végig a zene számot és nevezd meg melyik népdalról-dalról van szó!",
         "answer": "Szélről legeljetek...",
         "comment": "",
         "sound": "/database/sounds/nepdalok/cs/nepdalok_1_6.mp3",
-        "image": null
-      }
-    ]
-  },
-  {
-    "id": "nepdalok_cs_2",
-    "displayName": "Hol járok?",
-    "questions": [
-      {
-        "id": 10259,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Nyisd ki anyám az ablakodat, csókold meg a cserkész lányodat .",
-        "answer": "Daltól hangos",
-        "comment": "",
-        "sound": null,
-        "image": null
-      },
-      {
-        "id": 10260,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Hogy ha megszomjazik hátzsákját kibontja.",
-        "answer": "Fel fel cserkész pajtás",
-        "comment": "",
-        "sound": null,
-        "image": null
-      },
-      {
-        "id": 10261,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Szeretőjük mindig más az uruk csak ráadás.",
-        "answer": "Boncidai piacon",
-        "comment": "",
-        "sound": null,
-        "image": null
-      },
-      {
-        "id": 10262,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Szedd össze a sátorfádat látogasd meg az anyádat.",
-        "answer": "Elmúltak a mézes hetek...",
-        "comment": "",
-        "sound": null,
-        "image": null
-      },
-      {
-        "id": 10263,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Vasárnap az ünnepi ebédre-bédre, farkát rágtuk egy özvegy tehénnek-hénnek.",
-        "answer": "Ettünk fa lombot",
-        "comment": "",
-        "sound": null,
-        "image": null
-      },
-      {
-        "id": 10264,
-        "question": "Mond meg hogy a kiragdt mondat melyik népdalból származik!<br />Csillagos ég, merre van a magyar hazám,merre sirat engem az édesanyám?",
-        "answer": "Kimegyek a doberdói harctérre...",
-        "comment": "",
-        "sound": null,
         "image": null
       }
     ]
@@ -2546,7 +2492,7 @@
     "questions": [
       {
         "id": 11277,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Kofa",
         "comment": "",
         "sound": null,
@@ -2554,7 +2500,7 @@
       },
       {
         "id": 11278,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Egyszeru kettos",
         "comment": "",
         "sound": null,
@@ -2562,7 +2508,7 @@
       },
       {
         "id": 11279,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Diszito nyolcas",
         "comment": "",
         "sound": null,
@@ -2570,7 +2516,7 @@
       },
       {
         "id": 11280,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Csuszo hurok",
         "comment": "",
         "sound": null,
@@ -2578,7 +2524,7 @@
       },
       {
         "id": 11281,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Ivelt kettos",
         "comment": "",
         "sound": null,
@@ -2586,7 +2532,7 @@
       },
       {
         "id": 11282,
-        "question": "",
+        "question": "Nevezd meg a csomót!",
         "answer": "Szorito nyolcas",
         "comment": "",
         "sound": null,
