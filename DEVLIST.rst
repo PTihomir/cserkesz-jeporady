@@ -5,7 +5,7 @@ Jeporady
 Development List
 ==========
 
-######Ezek csak ajánlatok, át kell beszélni majd mindet.
+###### Ezek csak ajánlatok, át kell beszélni majd mindet.
 
 - megoldani, hogy minden plusz vagy minusz pont eseten automatikusan valaszoltá tegye a kérdést. Esetleg egy plusz checkbox mellett amivel ki lehet kapcsolni ezt a funkcionalitást. Elég sokáig elhúzodott a gombok nyomogatása is.
 - túl kicsik a gombok, sokkal nagyobb gombok kellenek (táblázatra gondolok)
